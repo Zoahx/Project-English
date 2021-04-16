@@ -1,0 +1,20 @@
+{
+	"name": "MainMsgText",
+	"plugin-id": "Text",
+	"sid": 391061323053324,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 126438718558464
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 516064824361401
+		}
+	],
+	"effectTypes": []
+}

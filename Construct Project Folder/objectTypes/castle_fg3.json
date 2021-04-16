@@ -1,0 +1,49 @@
+{
+	"name": "castle_fg3",
+	"plugin-id": "Sprite",
+	"sid": 802002287983262,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 342,
+						"originX": 0.5,
+						"originY": 1.0847953216374269,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1427952,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.0029239766081871343,
+								0.999001996007984,
+								0.0029239766081871343,
+								0.999001996007984,
+								1,
+								0.000998003992015968,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 652316821145071,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

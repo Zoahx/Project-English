@@ -1,0 +1,15 @@
+{
+	"name": "txtQuestion",
+	"plugin-id": "Text",
+	"sid": 840567649638071,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 329391454046814
+		}
+	],
+	"effectTypes": []
+}

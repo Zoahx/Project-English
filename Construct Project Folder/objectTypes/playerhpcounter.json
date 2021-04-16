@@ -1,0 +1,9 @@
+{
+	"name": "PlayerHpCounter",
+	"plugin-id": "Text",
+	"sid": 605439868603481,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

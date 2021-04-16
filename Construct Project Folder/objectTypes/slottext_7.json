@@ -1,0 +1,16 @@
+{
+	"name": "SlotText_7",
+	"plugin-id": "Text",
+	"sid": 741993843602989,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TextID",
+			"type": "number",
+			"desc": "",
+			"sid": 775499166411906
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

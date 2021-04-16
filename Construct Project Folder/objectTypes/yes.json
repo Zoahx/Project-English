@@ -1,0 +1,15 @@
+{
+	"name": "Yes",
+	"plugin-id": "Button",
+	"sid": 609681047554037,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Confirmation",
+			"type": "number",
+			"desc": "0 means a Yes button, 1 means a No",
+			"sid": 297355483487269
+		}
+	],
+	"behaviorTypes": []
+}

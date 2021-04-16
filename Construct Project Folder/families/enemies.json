@@ -1,0 +1,40 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 757926210101952,
+	"instanceVariables": [
+		{
+			"name": "isDestroyed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 223767843590517
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 756086901036158
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 211907286545452
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"KnightAxeCommon",
+		"mandrake",
+		"Lizard",
+		"Cactus",
+		"Mimic",
+		"King",
+		"Snake",
+		"Soldier",
+		"Wolf",
+		"CaveBoss",
+		"BanditKing",
+		"BanditMan"
+	]
+}

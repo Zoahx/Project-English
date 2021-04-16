@@ -1,0 +1,100 @@
+{
+	"name": "WoodUI2",
+	"plugin-id": "Sprite",
+	"sid": 385184750728912,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 594831935172537
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 406,
+						"height": 83,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3714526,
+						"collisionPoly": {
+							"points": [
+								0.10344827586206896,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								0.19458128078817735,
+								0.9759036144578314,
+								0.05172413793103448,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.1354679802955665,
+								"y": 0.4457831325301205
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.23399014778325122,
+								"y": 0.3614457831325301
+							},
+							{
+								"name": "Image Point 3",
+								"x": 0.5049261083743842,
+								"y": 0.4457831325301205
+							},
+							{
+								"name": "Image Point 4",
+								"x": 0.603448275862069,
+								"y": 0.1927710843373494
+							},
+							{
+								"name": "Image Point 5",
+								"x": 0.7364532019704434,
+								"y": 0.12048192771084337
+							},
+							{
+								"name": "Image Point 6",
+								"x": 0.9384236453201971,
+								"y": 0.46987951807228917
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 270759157507506,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

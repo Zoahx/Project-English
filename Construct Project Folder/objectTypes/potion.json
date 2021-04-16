@@ -1,0 +1,57 @@
+{
+	"name": "potion",
+	"plugin-id": "Sprite",
+	"sid": 537320362375334,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 860,
+						"height": 1030,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2104705,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9988372093023256,
+								0,
+								0.9988372093023256,
+								0.5,
+								0.9988372093023256,
+								0.9990291262135922,
+								0.5,
+								0.9990291262135922,
+								0,
+								0.9990291262135922,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 862939415639154,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

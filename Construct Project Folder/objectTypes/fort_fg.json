@@ -1,0 +1,49 @@
+{
+	"name": "fort_fg",
+	"plugin-id": "Sprite",
+	"sid": 502424179180381,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 322,
+						"originX": 0.5,
+						"originY": 1.1521739130434783,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3443665,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.003105590062111801,
+								0.999001996007984,
+								0.003105590062111801,
+								0.999001996007984,
+								1,
+								0.000998003992015968,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 831475093348410,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

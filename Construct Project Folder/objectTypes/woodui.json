@@ -1,0 +1,57 @@
+{
+	"name": "WoodUI",
+	"plugin-id": "Sprite",
+	"sid": 563100916244277,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 904,
+						"height": 986,
+						"originX": 0.46238938053097345,
+						"originY": 0.43204868154158216,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7413363,
+						"collisionPoly": {
+							"points": [
+								0.046460176991150445,
+								0.05070993914807302,
+								0.46238938053097345,
+								0.06490872210953347,
+								0.8738938053097346,
+								0.0537525354969574,
+								0.9811946902654868,
+								0.43204868154158216,
+								0.8451327433628318,
+								0.7829614604462475,
+								0.46238938053097345,
+								0.9888438133874239,
+								0.08738938053097345,
+								0.7748478701825557,
+								0.023230088495575223,
+								0.43204868154158216
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 817418934220874,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,492 @@
+{
+	"name": "ES_HangmanSettings",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Save WordList",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "SaveBttn",
+							"sid": 210762406090690
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 859025569544443,
+							"parameters": {
+								"key": "\"MyWordList1\"",
+								"value": "wordListArray_SL.AsJSON"
+							}
+						}
+					],
+					"sid": 712728828956222
+				}
+			],
+			"sid": 488615871509003
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Load Wordbank",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Load",
+							"sid": 661400680140948
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "wordListArray_SL",
+							"sid": 928795107733161,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 872889518958223,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 818767477275888,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 678908502069999,
+									"parameters": {
+										"name": "\"load array\"",
+										"start-index": "0",
+										"end-index": "wordListArray_SL.Width -1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-item",
+									"objectClass": "customWordList",
+									"sid": 190162534916147,
+									"parameters": {
+										"text": "wordListArray_SL.At(loopindex)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 960823377007309,
+									"parameters": {
+										"variable": "AddedWord",
+										"value": "wordListArray_SL.At(loopindex)"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 511415321550979,
+									"parameters": {
+										"variable": "customWords",
+										"value": "1"
+									}
+								},
+								{
+									"type": "script",
+									"script": "GetCustomWord(runtime);"
+								}
+							],
+							"sid": 647751712298774
+						}
+					]
+				}
+			],
+			"sid": 451225529470696
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Word Bank",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Add word to bank",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Enter",
+									"sid": 610814639999328
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 156510360789176,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "inputword",
+									"sid": 264963182259402,
+									"parameters": {
+										"property-name": "\"border\"",
+										"value": "\"1px solid red\""
+									}
+								}
+							],
+							"sid": 528084244791018,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "inputword",
+											"sid": 366018589457797,
+											"parameters": {
+												"text": "\"\"",
+												"case": "case-insensitive"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"script": "alert(\"text is empty\");"
+										}
+									],
+									"sid": 658451533038953
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 210254313363133
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 806981654935906,
+											"parameters": {
+												"variable": "AddedWord",
+												"value": "inputword.Text"
+											}
+										},
+										{
+											"type": "script",
+											"script": "Capitalize(runtime);"
+										}
+									],
+									"sid": 599000414225620,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 673446921246616,
+													"parameters": {
+														"variable": "wordError"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 713655102652499,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 948852274319698,
+													"parameters": {
+														"variable": "wordError",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 914196166834653
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 661921992471831
+												}
+											],
+											"actions": [
+												{
+													"id": "add-item",
+													"objectClass": "customWordList",
+													"sid": 763781428823216,
+													"parameters": {
+														"text": "AddedWord"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "inputword",
+													"sid": 323580968627738,
+													"parameters": {
+														"text": "\"\""
+													}
+												},
+												{
+													"type": "script",
+													"script": "alert(runtime.globalVars.AddedWord + \" was added to the list\");",
+													"disabled": true
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 543381562794326,
+													"parameters": {
+														"variable": "customWords",
+														"value": "1"
+													}
+												},
+												{
+													"id": "push",
+													"objectClass": "wordListArray_SL",
+													"sid": 334835312347101,
+													"parameters": {
+														"where": "back",
+														"value": "AddedWord",
+														"axis": "x"
+													}
+												},
+												{
+													"type": "script",
+													"script": "GetCustomWord(runtime);"
+												}
+											],
+											"sid": 305619065013158
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						}
+					],
+					"sid": 850931436435745
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Delete Word from List",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-double-clicked",
+									"objectClass": "customWordList",
+									"sid": 876889149904012
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "alert(\"Deleting this word\")"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 944781921332689,
+									"parameters": {
+										"variable": "deletedWord_es",
+										"value": "CustomWordList.SelectedIndex"
+									}
+								},
+								{
+									"id": "remove",
+									"objectClass": "customWordList",
+									"sid": 837089281265976,
+									"parameters": {
+										"index": "CustomWordList.SelectedIndex"
+									}
+								},
+								{
+									"type": "script",
+									"script": "DeleteCustomWord(runtime);"
+								}
+							],
+							"sid": 846897309360112,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-item-text-at",
+											"objectClass": "customWordList",
+											"sid": 148466422400375,
+											"parameters": {
+												"index": "0",
+												"text-to-compare": "\"Word List :\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 162164740353999
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 823112461173048
+										}
+									],
+									"actions": [],
+									"sid": 320502129711131
+								}
+							]
+						}
+					],
+					"sid": 106977093856862
+				}
+			],
+			"sid": 757529354081234
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "UI_QuizSettings",
+							"sid": 362818560778675
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 680790208009045,
+							"parameters": {
+								"layout": "QuizSettings"
+							}
+						}
+					],
+					"sid": 199325990341196
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "PuzzleSettings",
+							"sid": 722941098414133
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 680815933077162,
+							"parameters": {
+								"layout": "PuzzleSettings"
+							}
+						}
+					],
+					"sid": 470317122191879
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "UI_TitleScreen",
+							"sid": 176741489823396
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 554458561198164,
+							"parameters": {
+								"layout": "TitleScreen"
+							}
+						}
+					],
+					"sid": 495229108222087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "HideList",
+							"sid": 290500368689361
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "customWordList",
+							"sid": 874160959565861,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 698132068151734
+				}
+			],
+			"sid": 409569791973305
+		}
+	],
+	"sid": 730050983784593
+}

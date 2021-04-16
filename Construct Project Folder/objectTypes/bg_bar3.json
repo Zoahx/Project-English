@@ -1,0 +1,57 @@
+{
+	"name": "bg_bar3",
+	"plugin-id": "Sprite",
+	"sid": 807693106734968,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2000,
+						"height": 2000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7390015,
+						"collisionPoly": {
+							"points": [
+								0.157,
+								0.157,
+								0.5,
+								0.151,
+								0.8425,
+								0.157,
+								0.8755,
+								0.5,
+								0.847,
+								0.847,
+								0.5,
+								0.8555,
+								0.1525,
+								0.847,
+								0.1235,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 206420825613724,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

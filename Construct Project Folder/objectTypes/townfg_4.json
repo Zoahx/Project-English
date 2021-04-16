@@ -1,0 +1,57 @@
+{
+	"name": "townfg_4",
+	"plugin-id": "Sprite",
+	"sid": 141107436938203,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 412,
+						"originX": 0.5,
+						"originY": 0.9004854368932039,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 457287,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.0024271844660194173,
+								0.5,
+								0.0024271844660194173,
+								0.998003992015968,
+								0.0024271844660194173,
+								0.05089820359281437,
+								0.9004854368932039,
+								0.5059880239520959,
+								0.5995145631067961,
+								0.5,
+								0.6019417475728155,
+								0.49201596806387227,
+								0.6019417475728155,
+								0.000998003992015968,
+								0.9004854368932039
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 739619308143883,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

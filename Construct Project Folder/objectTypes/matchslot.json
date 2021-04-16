@@ -1,0 +1,15 @@
+{
+	"name": "MatchSlot",
+	"plugin-id": "Button",
+	"sid": 895160245875435,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"sid": 312438543748063
+		}
+	],
+	"behaviorTypes": []
+}

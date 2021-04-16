@@ -1,0 +1,31 @@
+{
+	"name": "Game Win",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_HangManMode"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoToTitle",
+					"sid": 333163120086654
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 216954688482511,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 438666030346391
+		}
+	],
+	"sid": 606883178536400
+}

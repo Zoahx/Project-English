@@ -1,0 +1,99 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CustomWords",
+					"sid": 814192237009930
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 756101254204755,
+					"parameters": {
+						"layout": "HangmanSettings"
+					}
+				}
+			],
+			"sid": 550472228651478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "NewGame",
+					"sid": 310719817230764
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 813591440913659,
+					"parameters": {
+						"layout": "Grass_Area1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 527833551858166,
+					"parameters": {
+						"variable": "isNewGame",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 359412292252960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 407108250049196
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 920449214372976,
+					"parameters": {
+						"key": "\"MyWordList1\""
+					}
+				}
+			],
+			"sid": 930706716975661
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "LoadGame",
+					"sid": 795278321740875
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 653870055432890,
+					"parameters": {
+						"slot": "\"mysave1\""
+					}
+				}
+			],
+			"sid": 498989592434414
+		}
+	],
+	"sid": 738130285908355
+}

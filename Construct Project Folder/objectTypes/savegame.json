@@ -1,0 +1,14 @@
+{
+	"name": "SaveGame",
+	"plugin-id": "Button",
+	"sid": 786375213263764,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 804171120370826
+		}
+	]
+}

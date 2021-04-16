@@ -1,0 +1,57 @@
+{
+	"name": "King",
+	"plugin-id": "Sprite",
+	"sid": 797796254251228,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 391,
+						"height": 253,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2511928,
+						"collisionPoly": {
+							"points": [
+								0.17902813299232737,
+								0.2766798418972332,
+								0.5,
+								0.19367588932806323,
+								0.6675191815856778,
+								0.5098814229249012,
+								0.6649616368286445,
+								0.5,
+								0.969309462915601,
+								0.9525691699604744,
+								0.5,
+								0.9802371541501976,
+								0.02557544757033248,
+								0.9565217391304348,
+								0.061381074168797956,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 858943949808706,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

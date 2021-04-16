@@ -1,0 +1,63 @@
+{
+	"name": "mandrake",
+	"plugin-id": "Sprite",
+	"sid": 680100888496803,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 304033440515180
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 203,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 110529,
+						"collisionPoly": {
+							"points": [
+								0.48684210526315785,
+								0.5,
+								0.9539473684210527,
+								0.9605911330049262,
+								0.5,
+								0.9901477832512315,
+								0.20394736842105265,
+								0.8472906403940886,
+								0.125,
+								0.5,
+								0.15131578947368418,
+								0.10837438423645321,
+								0.5,
+								0.3891625615763547,
+								0.3223684210526315,
+								0.5073891625615764
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 114176011542312,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

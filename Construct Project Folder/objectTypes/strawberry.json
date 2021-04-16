@@ -1,0 +1,68 @@
+{
+	"name": "Strawberry",
+	"plugin-id": "Sprite",
+	"sid": 711067439963917,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 206458949104902
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 896414591023990
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1200,
+						"height": 1200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8794923,
+						"collisionPoly": {
+							"points": [
+								0.19435215946843853,
+								0.15853658536585366,
+								0.5,
+								0.07046070460704607,
+								0.8147840531561463,
+								0.15040650406504066,
+								0.9966777408637874,
+								0.5,
+								0.7749169435215947,
+								0.8163956639566395,
+								0.5,
+								0.9518970189701897,
+								0.1644518272425249,
+								0.8651761517615176,
+								0.004152823920265781,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 795982041664146,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

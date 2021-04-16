@@ -1,0 +1,70 @@
+{
+	"name": "Lizard",
+	"plugin-id": "Sprite",
+	"sid": 966836262462156,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 626113658070308
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 192,
+						"height": 87,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 354710,
+						"collisionPoly": {
+							"points": [
+								0.45982142857142855,
+								0.6821192052980133,
+								0.5,
+								0.6026490066225165,
+								0.6651785714285714,
+								0.4900662251655629,
+								0.6651785714285714,
+								0.5,
+								0.9776785714285714,
+								0.9668874172185431,
+								0.5,
+								0.9801324503311258,
+								0.03571428571428571,
+								0.9403973509933775,
+								0.5535714285714286,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 931995246417940,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

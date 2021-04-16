@@ -1,0 +1,665 @@
+{
+	"name": "Puzzle",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_QuestMode"
+		},
+		{
+			"eventType": "variable",
+			"name": "Answer1",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 937854486663507
+		},
+		{
+			"eventType": "variable",
+			"name": "PuzzlesCorrect",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 244678535582381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 909713227031137
+				}
+			],
+			"actions": [],
+			"sid": 371824102899478,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 850780312783156,
+							"parameters": {
+								"variable": "curAdvLayout",
+								"comparison": 0,
+								"value": "\"Desert_Area6\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 153651101170080,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "get-binary-item",
+							"objectClass": "LocalStorage",
+							"sid": 556125980210039,
+							"parameters": {
+								"key": "\"PuzzleImage1\"",
+								"destination": "Images"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Puzzle_Image",
+							"sid": 223861830184670,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 778257074996664,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Puzzle_Image",
+							"sid": 786070818868382,
+							"parameters": {
+								"width": "300",
+								"height": "300"
+							}
+						}
+					],
+					"sid": 687292332772954
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changed",
+					"objectClass": "FileChooser",
+					"sid": 598428978123496
+				},
+				{
+					"id": "compare-selection",
+					"objectClass": "wordListSlots",
+					"sid": 976921893901866,
+					"parameters": {
+						"comparison": 0,
+						"index": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load-image-from-url",
+					"objectClass": "Puzzle_Image",
+					"sid": 704159004921316,
+					"parameters": {
+						"uri": "FileChooser.FileURLAt(0)",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 841556961426423,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Puzzle_Image",
+					"sid": 487595617692120,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Puzzle_Image",
+					"sid": 307069403537033,
+					"parameters": {
+						"width": "300",
+						"height": "300"
+					}
+				}
+			],
+			"sid": 216006180934861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changed",
+					"objectClass": "FileChooser",
+					"sid": 318617727210927
+				},
+				{
+					"id": "compare-selection",
+					"objectClass": "wordListSlots",
+					"sid": 533486701031309,
+					"parameters": {
+						"comparison": 0,
+						"index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load-image-from-url",
+					"objectClass": "Puzzle_Image",
+					"sid": 784990797624800,
+					"parameters": {
+						"uri": "FileChooser.FileURLAt(1)",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 389321594244984,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Puzzle_Image",
+					"sid": 492169091136414,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Puzzle_Image",
+					"sid": 672343767998080,
+					"parameters": {
+						"width": "300",
+						"height": "300"
+					}
+				}
+			],
+			"sid": 732721440327989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "SaveBttn",
+					"sid": 613568526819913
+				}
+			],
+			"actions": [],
+			"sid": 488611934654716,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "wordListSlots",
+							"sid": 652312922281845,
+							"parameters": {
+								"comparison": 0,
+								"index": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 741439600727765,
+							"parameters": {
+								"variable": "Answer1",
+								"value": "inputword.Text"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 622579632186548,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "inputword",
+							"sid": 682183594043018,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-response-binary",
+							"objectClass": "AJAX",
+							"sid": 672154184324169,
+							"parameters": {
+								"destination": "Images"
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 155151386163586,
+							"parameters": {
+								"tag": "\"load-customImage\"",
+								"url": "FileChooser.FileURLAt(0)"
+							}
+						},
+						{
+							"type": "script",
+							"script": "alert(\"saved to 1\")"
+						}
+					],
+					"sid": 485395049012179
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "wordListSlots",
+							"sid": 422516272739268,
+							"parameters": {
+								"comparison": 0,
+								"index": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-response-binary",
+							"objectClass": "AJAX",
+							"sid": 305335443591080,
+							"parameters": {
+								"destination": "Images"
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 827067680338838,
+							"parameters": {
+								"tag": "\"load-customImage\"",
+								"url": "FileChooser.FileURLAt(1)"
+							}
+						}
+					],
+					"sid": 416061938764357
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 327178739579848,
+					"parameters": {
+						"tag": "\"load-customImage\""
+					}
+				},
+				{
+					"id": "compare-selection",
+					"objectClass": "wordListSlots",
+					"sid": 632466644542277,
+					"parameters": {
+						"comparison": 0,
+						"index": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-binary-item",
+					"objectClass": "LocalStorage",
+					"sid": 425944399403509,
+					"parameters": {
+						"key": "\"PuzzleImage1\"",
+						"source": "Images"
+					}
+				}
+			],
+			"sid": 439049555485008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 974920500862474,
+					"parameters": {
+						"tag": "\"load-customImage\""
+					}
+				},
+				{
+					"id": "compare-selection",
+					"objectClass": "wordListSlots",
+					"sid": 945947006124898,
+					"parameters": {
+						"comparison": 0,
+						"index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-binary-item",
+					"objectClass": "LocalStorage",
+					"sid": 507116620265895,
+					"parameters": {
+						"key": "\"PuzzleImage2\"",
+						"source": "Images"
+					}
+				}
+			],
+			"sid": 300151495217361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Load",
+					"sid": 338110157866826
+				}
+			],
+			"actions": [],
+			"sid": 142452226272633,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "wordListSlots",
+							"sid": 345128004259110,
+							"parameters": {
+								"comparison": 0,
+								"index": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-binary-item",
+							"objectClass": "LocalStorage",
+							"sid": 682722011048488,
+							"parameters": {
+								"key": "\"PuzzleImage1\"",
+								"destination": "Images"
+							}
+						}
+					],
+					"sid": 386156719444797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "wordListSlots",
+							"sid": 997460197431672,
+							"parameters": {
+								"comparison": 0,
+								"index": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-binary-item",
+							"objectClass": "LocalStorage",
+							"sid": 973351000374195,
+							"parameters": {
+								"key": "\"PuzzleImage2\"",
+								"destination": "Images"
+							}
+						}
+					],
+					"sid": 825900342479927
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 219564544953612,
+					"parameters": {
+						"key": "\"PuzzleImage1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load-image-from-url",
+					"objectClass": "Puzzle_Image",
+					"sid": 441613124725116,
+					"parameters": {
+						"uri": "Images.GetURL",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				}
+			],
+			"sid": 321972398302480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 329374904686054,
+					"parameters": {
+						"key": "\"PuzzleImage2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load-image-from-url",
+					"objectClass": "Puzzle_Image",
+					"sid": 927635244675087,
+					"parameters": {
+						"uri": "Images.GetURL",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				}
+			],
+			"sid": 988614899751384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 391392679346369,
+					"parameters": {
+						"variable": "PuzzlesCorrect",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 417932423026146,
+					"parameters": {
+						"layout": "Desert_Area7"
+					}
+				}
+			],
+			"sid": 905197803846281
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Enter",
+					"sid": 226952538039952
+				}
+			],
+			"actions": [],
+			"sid": 816167332654336,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "TextInput",
+							"sid": 822860285253491,
+							"parameters": {
+								"text": "Answer1",
+								"case": "case-insensitive"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 273518469381987,
+							"parameters": {
+								"variable": "PuzzlesCorrect",
+								"value": "1"
+							}
+						},
+						{
+							"type": "script",
+							"script": "alert(\"correct!\")"
+						},
+						{
+							"callFunction": "callNextpuzzle",
+							"sid": 783727933216859
+						}
+					],
+					"sid": 197365550380789
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "UI_QuizSettings",
+					"sid": 193165541111517
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 887015911895903,
+					"parameters": {
+						"layout": "QuizSettings"
+					}
+				}
+			],
+			"sid": 381835813794777
+		},
+		{
+			"functionName": "callNextpuzzle",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 948992652365278,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "get-binary-item",
+					"objectClass": "LocalStorage",
+					"sid": 620706037036200,
+					"parameters": {
+						"key": "\"PuzzleImage2\"",
+						"destination": "Images"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Puzzle_Image",
+					"sid": 894355260089438,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 270896319126957,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Puzzle_Image",
+					"sid": 868828658014327,
+					"parameters": {
+						"width": "300",
+						"height": "300"
+					}
+				}
+			],
+			"sid": 345641605541137
+		}
+	],
+	"sid": 265791034941610
+}

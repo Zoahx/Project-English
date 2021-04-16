@@ -1,0 +1,1156 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 24100,
+	"name": "English Quest",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "List",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "filechooser",
+			"name": "File chooser",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "BinaryData",
+			"name": "Binary Data",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialblur",
+			"name": "Radial blur",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		}
+	],
+	"uniqueId": "m25wofqtl5p",
+	"objectTypes": {
+		"items": [
+			"MatchHeader",
+			"No",
+			"BanditKing",
+			"BanditMan",
+			"congrats",
+			"GoToTitle"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"slash_0",
+					"Ani_light",
+					"Fire_0",
+					"hit_0"
+				],
+				"subfolders": [],
+				"name": "Animations"
+			},
+			{
+				"items": [
+					"bg_bar3",
+					"bg_barBlue",
+					"desertfg",
+					"dessert3fg",
+					"dessertfg2",
+					"dessertfg4",
+					"dessertfg5",
+					"dessertGate",
+					"grasslandbg4",
+					"guiHeaderClass",
+					"guiHeaderLevel",
+					"potion",
+					"SlimeTokenUI",
+					"TextFilter",
+					"town5",
+					"town_fg3",
+					"townbg3",
+					"townFg",
+					"WhiteBackground",
+					"WoodUI",
+					"WoodUI2"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"castle_bg1",
+							"port_bg",
+							"grassLand_bg",
+							"empty_bg",
+							"Main_bg",
+							"setting_bg",
+							"forest_bg2",
+							"forest_bg3",
+							"beach_bg",
+							"fort_bg",
+							"fort_bg2",
+							"sand_bg",
+							"wood_bg",
+							"townbg"
+						],
+						"subfolders": [],
+						"name": "Backgrounds"
+					},
+					{
+						"items": [
+							"castle_fg1",
+							"grassLand_fg",
+							"castle_fg2",
+							"port_fg",
+							"castle_fg3",
+							"fort_fg",
+							"forest_fg",
+							"Fort_fg2",
+							"fort_fg3",
+							"town_fg2",
+							"townfg_4"
+						],
+						"subfolders": [],
+						"name": "Foregrounds"
+					},
+					{
+						"items": [
+							"MainMessageBox",
+							"msgBox",
+							"—Pngtree—emoticons_",
+							"heart",
+							"heartObject"
+						],
+						"subfolders": [],
+						"name": "UI"
+					}
+				],
+				"name": "Images"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"question_inputField",
+							"questionSaveSlots"
+						],
+						"subfolders": [],
+						"name": "CustomQuiz_UI"
+					},
+					{
+						"items": [
+							"Answer",
+							"Answer1",
+							"Answer2",
+							"Answer3",
+							"Button",
+							"CorrectAnswer",
+							"CorrectMessage",
+							"save",
+							"Touch",
+							"txtAnswer",
+							"txtEnd",
+							"txtNext",
+							"txtQuestion",
+							"txtSolution",
+							"txtGoodScore",
+							"txtBadScore",
+							"txtHeader"
+						],
+						"subfolders": [],
+						"name": "Quiz"
+					}
+				],
+				"name": "Quiz Objects"
+			},
+			{
+				"items": [
+					"Artifact1",
+					"Artifact2",
+					"Artifact3",
+					"Artifact4",
+					"Bandit",
+					"Cactus",
+					"CaveBoss",
+					"Lizard",
+					"misc",
+					"Snake",
+					"StoreOwner"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"KnightAxeCommon",
+							"mandrake",
+							"Soldier",
+							"Wolf"
+						],
+						"subfolders": [],
+						"name": "Enemies"
+					},
+					{
+						"items": [
+							"SlimeRPGAttacker",
+							"SlimeRPGCaster",
+							"SlimeRPGDefender"
+						],
+						"subfolders": [],
+						"name": "Player"
+					},
+					{
+						"items": [
+							"King",
+							"slimeNPC",
+							"slimeNPC2"
+						],
+						"subfolders": [],
+						"name": "NPC"
+					},
+					{
+						"items": [
+							"Mimic",
+							"PlayerSpawn"
+						],
+						"subfolders": [],
+						"name": "Misc"
+					}
+				],
+				"name": "Character"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Sunny",
+							"Cloudy",
+							"Snowing",
+							"Rainy",
+							"Cold",
+							"Hot"
+						],
+						"subfolders": [],
+						"name": "Weather Buttons"
+					},
+					{
+						"items": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Friday",
+							"Thursday"
+						],
+						"subfolders": [],
+						"name": "DOW Buttons"
+					},
+					{
+						"items": [
+							"Bad",
+							"Good",
+							"Okay"
+						],
+						"subfolders": [],
+						"name": "Feeling Buttons"
+					}
+				],
+				"name": "NewGameAnswers"
+			},
+			{
+				"items": [
+					"FileChooser",
+					"Images",
+					"wordListSlots"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"AJAX",
+							"JSON",
+							"Keyboard",
+							"inputword",
+							"LocalStorage",
+							"Mouse"
+						],
+						"subfolders": [],
+						"name": "Tools"
+					},
+					{
+						"items": [
+							"quizDictionary",
+							"PlayerData",
+							"words"
+						],
+						"subfolders": [],
+						"name": "Dictionaries"
+					},
+					{
+						"items": [
+							"wordListArray_SL"
+						],
+						"subfolders": [],
+						"name": "Arrays"
+					}
+				],
+				"name": "Systems"
+			},
+			{
+				"items": [
+					"ContAdv",
+					"CustomWords",
+					"Debug",
+					"Enter",
+					"EnterCastle",
+					"Fight",
+					"GameStart",
+					"Search",
+					"Load",
+					"moveRight",
+					"moveLeft",
+					"moveDown",
+					"moveUp",
+					"Next",
+					"SaveBttn",
+					"NewGame",
+					"TryAgain",
+					"AttackButton",
+					"Yes",
+					"Exit",
+					"HideList",
+					"LoadGame",
+					"okkk",
+					"SaveGame",
+					"Submit",
+					"Talk",
+					"towerbg1",
+					"UI_QuizSettings",
+					"UI_TitleScreen"
+				],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "Movement"
+					}
+				],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"EnglishQuest",
+					"GameOver",
+					"HitpointCounter",
+					"HitpointHeader",
+					"IndexSpace",
+					"info_1",
+					"info_2",
+					"info_3",
+					"info_4",
+					"info_5",
+					"MainMsgText",
+					"Name",
+					"PlayerHpCounter",
+					"PlayerHPHeader",
+					"PlayerJobHead",
+					"PlayerJobHeader",
+					"QuizText",
+					"Text",
+					"TextCustom",
+					"versiontxt",
+					"WinMessage",
+					"EventText",
+					"HintText",
+					"NameHeader",
+					"PriceText",
+					"PuzzleQuestionTxt",
+					"TalkText",
+					"TextInput",
+					"ui_PlayerClassTxt",
+					"ui_PlayerMoneyTxt",
+					"ui_PlayerLevelTxt"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"customWordList"
+						],
+						"subfolders": [],
+						"name": "CustomHangman_UI"
+					},
+					{
+						"items": [
+							"A",
+							"B",
+							"C",
+							"D",
+							"E",
+							"F",
+							"G",
+							"H",
+							"I",
+							"J",
+							"K",
+							"L",
+							"M",
+							"N",
+							"O",
+							"P",
+							"Q",
+							"R",
+							"S",
+							"T",
+							"U",
+							"V",
+							"W",
+							"X",
+							"Y",
+							"Z"
+						],
+						"subfolders": [],
+						"name": "Letter Buttons"
+					}
+				],
+				"name": "Hangman"
+			},
+			{
+				"items": [
+					"MatchSlot",
+					"MatchSlots"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"SlotText_1",
+							"SlotText_2",
+							"SlotText_3",
+							"SlotText_4",
+							"SlotText_5",
+							"SlotText_6",
+							"SlotText_7",
+							"SlotText_8"
+						],
+						"subfolders": [],
+						"name": "SlotText"
+					}
+				],
+				"name": "Matching"
+			},
+			{
+				"items": [
+					"Puzzle_Image",
+					"PuzzleSettings"
+				],
+				"subfolders": [],
+				"name": "Puzzle"
+			},
+			{
+				"items": [
+					"SlimeTokenObj",
+					"Strawberry",
+					"Table",
+					"TreasureChest"
+				],
+				"subfolders": [],
+				"name": "Items"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"Friday",
+				"Monday",
+				"Thursday",
+				"Tuesday",
+				"Wednesday"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"guiHeaderClass",
+				"guiHeaderLevel",
+				"SlimeTokenUI",
+				"ui_PlayerClassTxt",
+				"ui_PlayerLevelTxt",
+				"ui_PlayerMoneyTxt",
+				"WoodUI2"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"bg_barBlue",
+				"SlotText_1"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"Answer",
+				"txtAnswer"
+			],
+			"selectMode": "normal"
+		}
+	],
+	"families": {
+		"items": [
+			"Alphabet",
+			"Days",
+			"Feeling",
+			"Weather",
+			"Classes",
+			"Enemies",
+			"PlayerUI",
+			"Animations"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"GameWin"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"TitleScreen",
+							"Win",
+							"Game Over",
+							"Quiz",
+							"QuestSlimeKing",
+							"BanditKing"
+						],
+						"subfolders": [],
+						"name": "GameScreens"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Grass_Area1",
+									"Grass_Area2",
+									"Grass_Area3",
+									"Grass_Area4",
+									"Grass_Area5"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [
+									"GrassA3_Battle",
+									"DesertA4_Battle",
+									"DesertA3_Battle",
+									"ForestA2_Battle",
+									"FortA2_Battle"
+								],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "GrassLands"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Castle_Area1",
+									"Castle_Area2",
+									"Castle_Area3"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [
+									"CastleA1_Battle",
+									"Matching_Battle_Castle",
+									"Matching_Battle_Fort"
+								],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "Castle"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Port_Area1"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "Port"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Forest_Area1",
+									"Forest_Area2"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "Forest"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Fort_Area1",
+									"Fort_Area3",
+									"Fort_Area2"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "Fort"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Town_Area1",
+									"Town_Area2",
+									"Town_Area3",
+									"Town_Area4",
+									"Town_Area5"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							}
+						],
+						"name": "Town"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Desert_Area1",
+									"Desert_Area2",
+									"Desert_Area3",
+									"Desert_Area4",
+									"Desert_Area5",
+									"Desert_Area6",
+									"Desert_Area7"
+								],
+								"subfolders": [],
+								"name": "Areas"
+							},
+							{
+								"items": [
+									"Matching_Battle_Cave"
+								],
+								"subfolders": [],
+								"name": "Battle"
+							}
+						],
+						"name": "Desert"
+					},
+					{
+						"items": [
+							"Tower_Area1"
+						],
+						"subfolders": [],
+						"name": "Tower"
+					}
+				],
+				"name": "Adventure Maps"
+			},
+			{
+				"items": [
+					"HangManTest"
+				],
+				"subfolders": [],
+				"name": "Debug"
+			},
+			{
+				"items": [
+					"HangmanSettings",
+					"QuizSettings",
+					"PuzzleSettings"
+				],
+				"subfolders": [],
+				"name": "Settings"
+			},
+			{
+				"items": [
+					"Repository"
+				],
+				"subfolders": [],
+				"name": "system"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"Game Win"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"ES_QuizSettings",
+					"ES_HangmanSettings"
+				],
+				"subfolders": [],
+				"name": "GameSettings"
+			},
+			{
+				"items": [
+					"Event sheet 1",
+					"Puzzle"
+				],
+				"subfolders": [],
+				"name": "TestDebug"
+			},
+			{
+				"items": [
+					"ES_QuizMode",
+					"ES_HangManMode",
+					"ES_QuestMode",
+					"ES_MatchingMode"
+				],
+				"subfolders": [],
+				"name": "GameModes"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 490870836906349,
+					"script-info": {
+						"purpose": "imports-for-events"
+					}
+				},
+				{
+					"name": "customMethods.js",
+					"type": "application/javascript",
+					"sid": 914765432849127,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "EnemyDatabase.js",
+					"type": "application/javascript",
+					"sid": 363379230848979,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PlayerClass.js",
+					"type": "application/javascript",
+					"sid": 832169882829739,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Goffik-O.ttf",
+					"type": "application/font-sfnt",
+					"sid": 217177382670897
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 845228965278280,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 603455059151999,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 517424807348238,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 434614020422165,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 907167489884911,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 433971740836953,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 954691744690867,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "player.json",
+					"type": "application/json",
+					"sid": 299582690357335
+				},
+				{
+					"name": "CustomQuestions.json",
+					"type": "application/json",
+					"sid": 492737748127384
+				},
+				{
+					"name": "file.txt",
+					"type": "text/plain",
+					"sid": 974120238018741
+				},
+				{
+					"name": "MatchLibrary_1.json",
+					"type": "application/json",
+					"sid": 301086806663447
+				},
+				{
+					"name": "MatchLibrary_2.json",
+					"type": "application/json",
+					"sid": 613810537225942
+				},
+				{
+					"name": "CustomQuestions2.json",
+					"type": "application/json",
+					"sid": 788497440630775
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "2.0",
+		"author": "",
+		"authorEmail": "blarkdev@gmail.com",
+		"authorWebsite": "",
+		"appId": "zoahdev.silver.com",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"scriptsType": "classic",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "app"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "TitleScreen"
+}

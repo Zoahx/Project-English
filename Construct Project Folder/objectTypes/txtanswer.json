@@ -1,0 +1,16 @@
+{
+	"name": "txtAnswer",
+	"plugin-id": "Text",
+	"sid": 923977055812330,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"sid": 302063824721564
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

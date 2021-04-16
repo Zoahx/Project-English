@@ -1,0 +1,37 @@
+{
+	"name": "MainMessageBox",
+	"plugin-id": "Sprite",
+	"sid": 913754847476118,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1109,
+						"height": 589,
+						"originX": 0.4661857529305681,
+						"originY": 0.5093378607809848,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6290172,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 622727874026215,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "ui_PlayerMoneyTxt",
+	"plugin-id": "Text",
+	"sid": 827925713125115,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 505188018172034
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,63 @@
+{
+	"name": "SlimeTokenUI",
+	"plugin-id": "Sprite",
+	"sid": 462042729673764,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 981506504616522
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2000,
+						"height": 2000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1834250,
+						"collisionPoly": {
+							"points": [
+								0.222,
+								0.222,
+								0.5,
+								0.092,
+								0.7915,
+								0.208,
+								0.903,
+								0.5,
+								0.773,
+								0.773,
+								0.5,
+								0.8715,
+								0.24,
+								0.7595,
+								0.1245,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 753962041471548,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

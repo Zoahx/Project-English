@@ -1,0 +1,53 @@
+{
+	"name": "desertfg",
+	"plugin-id": "Sprite",
+	"sid": 183970640442653,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 431,
+						"originX": 0.5,
+						"originY": 0.8607888631090487,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1400696,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.002320185614849188,
+								0.5,
+								0.002320185614849188,
+								0.998003992015968,
+								0.002320185614849188,
+								0.5499001996007984,
+								0.6751740139211136,
+								0.5,
+								0.6867749419953596,
+								0.437125748502994,
+								0.703016241299304
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 786116620754754,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

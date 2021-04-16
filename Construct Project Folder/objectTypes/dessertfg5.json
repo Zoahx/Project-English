@@ -1,0 +1,53 @@
+{
+	"name": "dessertfg5",
+	"plugin-id": "Sprite",
+	"sid": 165450287615023,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 344,
+						"originX": 0.5,
+						"originY": 1.0784883720930232,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7776019,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.0029069767441860465,
+								0.5,
+								0.0029069767441860465,
+								0.998003992015968,
+								0.0029069767441860465,
+								0.5499001996007984,
+								0.8459302325581395,
+								0.5,
+								0.8313953488372093,
+								0.4481037924151697,
+								0.8488372093023255
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 682844725578571,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

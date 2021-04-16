@@ -1,0 +1,953 @@
+{
+	"name": "Ani_light",
+	"plugin-id": "Sprite",
+	"sid": 710156238651841,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5052083333333334,
+						"originY": 0.8385416666666666,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2944210,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3545982,
+						"collisionPoly": {
+							"points": [
+								0.5052083333333334,
+								0.5052083333333334,
+								0.5,
+								0,
+								0.5104166666666666,
+								0.484375,
+								0.5104166666666666,
+								0.5,
+								0.5104166666666666,
+								0.5104166666666666,
+								0.5,
+								0.8645833333333334,
+								0.5052083333333334,
+								0.4895833333333333,
+								0.5052083333333334,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3090554,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.5,
+								0.5,
+								0,
+								0.5104166666666666,
+								0.484375,
+								0.5104166666666666,
+								0.5,
+								0.5104166666666666,
+								0.5104166666666666,
+								0.5,
+								0.8697916666666666,
+								0.5,
+								0.4947916666666667,
+								0.5,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7436673,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.515625,
+								0.4791666666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5042713,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.515625,
+								0.4791666666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4617706,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.515625,
+								0.4791666666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3104368,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.515625,
+								0.4791666666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8605538,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.5625,
+								0.4322916666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2735177,
+						"collisionPoly": {
+							"points": [
+								0.4947916666666667,
+								0.4947916666666667,
+								0.5,
+								0,
+								0.5625,
+								0.4322916666666667,
+								0.515625,
+								0.5,
+								0.515625,
+								0.515625,
+								0.5,
+								0.875,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9887949,
+						"collisionPoly": {
+							"points": [
+								0.484375,
+								0.484375,
+								0.5,
+								0,
+								0.53125,
+								0.4635416666666667,
+								0.5260416666666666,
+								0.5,
+								0.5260416666666666,
+								0.5260416666666666,
+								0.5,
+								0.8802083333333334,
+								0.484375,
+								0.5104166666666666,
+								0.484375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1120574,
+						"collisionPoly": {
+							"points": [
+								0.4739583333333333,
+								0.4739583333333333,
+								0.5,
+								0,
+								0.546875,
+								0.4479166666666667,
+								0.5416666666666666,
+								0.5,
+								0.5416666666666666,
+								0.5416666666666666,
+								0.5,
+								0.8854166666666666,
+								0.4739583333333333,
+								0.5208333333333334,
+								0.4739583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3444149,
+						"collisionPoly": {
+							"points": [
+								0.4583333333333333,
+								0.4583333333333333,
+								0.5,
+								0,
+								0.5677083333333334,
+								0.4270833333333333,
+								0.5572916666666666,
+								0.5,
+								0.5520833333333334,
+								0.5520833333333334,
+								0.5,
+								0.90625,
+								0.4583333333333333,
+								0.5364583333333334,
+								0.4583333333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8920399,
+						"collisionPoly": {
+							"points": [
+								0.4322916666666667,
+								0.4322916666666667,
+								0.5,
+								0,
+								0.578125,
+								0.4166666666666667,
+								0.5729166666666666,
+								0.5,
+								0.5677083333333334,
+								0.5677083333333334,
+								0.5,
+								0.9010416666666666,
+								0.4479166666666667,
+								0.546875,
+								0.4427083333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8511259,
+						"collisionPoly": {
+							"points": [
+								0.4166666666666667,
+								0.4166666666666667,
+								0.5,
+								0,
+								0.59375,
+								0.4010416666666667,
+								0.5885416666666666,
+								0.5,
+								0.5833333333333334,
+								0.5833333333333334,
+								0.5,
+								0.9166666666666666,
+								0.4322916666666667,
+								0.5625,
+								0.4270833333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5461083,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.5989583333333334,
+								0.3958333333333333,
+								0.59375,
+								0.5,
+								0.59375,
+								0.59375,
+								0.5,
+								0.921875,
+								0.4270833333333333,
+								0.5677083333333334,
+								0.421875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3711531,
+						"collisionPoly": {
+							"points": [
+								0.4166666666666667,
+								0.4166666666666667,
+								0.5,
+								0,
+								0.5989583333333334,
+								0.3958333333333333,
+								0.59375,
+								0.5,
+								0.59375,
+								0.59375,
+								0.5,
+								0.921875,
+								0.421875,
+								0.5729166666666666,
+								0.4166666666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1167906,
+						"collisionPoly": {
+							"points": [
+								0.4166666666666667,
+								0.4166666666666667,
+								0.5,
+								0,
+								0.5989583333333334,
+								0.3958333333333333,
+								0.5989583333333334,
+								0.5,
+								0.5989583333333334,
+								0.5989583333333334,
+								0.5,
+								0.90625,
+								0.4166666666666667,
+								0.578125,
+								0.4166666666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2250302,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3791116,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1094409,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8560123,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1331194,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5107894,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7930287,
+						"collisionPoly": {
+							"points": [
+								0.4114583333333333,
+								0.4114583333333333,
+								0.5,
+								0,
+								0.6041666666666666,
+								0.390625,
+								0.6041666666666666,
+								0.5,
+								0.6041666666666666,
+								0.6041666666666666,
+								0.5,
+								0.890625,
+								0.4114583333333333,
+								0.5833333333333334,
+								0.4114583333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4336802,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.5208333333333334,
+								0.4947916666666667,
+								0.5,
+								0.4947916666666667,
+								0.5,
+								0.5,
+								0.6458333333333334,
+								0.4895833333333333,
+								0.5052083333333334,
+								0.4947916666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9771669,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.5520833333333334,
+								0.5104166666666666,
+								0.484375,
+								0.5,
+								0.5677083333333334,
+								0.5104166666666666,
+								0.484375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6872376,
+						"collisionPoly": {
+							"points": [
+								0.5052083333333334,
+								0.5052083333333334,
+								0.5,
+								0.5729166666666666,
+								0.5104166666666666,
+								0.5,
+								0.5052083333333334,
+								0.5052083333333334,
+								0.5,
+								0.59375,
+								0.5052083333333334,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 669720,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.4427083333333333,
+								0.46875,
+								0.5260416666666666,
+								0.4791666666666667,
+								0.5,
+								0.5,
+								0.6145833333333334,
+								0.4479166666666667,
+								0.546875,
+								0.4791666666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9975733,
+						"collisionPoly": {
+							"points": [
+								0.5208333333333334,
+								0.5208333333333334,
+								0.5,
+								0.390625,
+								0.4791666666666667,
+								0.515625,
+								0.5208333333333334,
+								0.5208333333333334,
+								0.5,
+								0.6354166666666666,
+								0.4739583333333333,
+								0.5208333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6575019,
+						"collisionPoly": {
+							"points": [
+								0.4895833333333333,
+								0.4895833333333333,
+								0.5,
+								0.4114583333333333,
+								0.5,
+								0.4947916666666667,
+								0.5,
+								0.5,
+								0.5,
+								0.5,
+								0.5,
+								0.625,
+								0.4947916666666667,
+								0.5,
+								0.4895833333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 192,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5831035,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 372983010752247,
+				"name": "light",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 24
+			}
+		],
+		"subfolders": []
+	}
+}

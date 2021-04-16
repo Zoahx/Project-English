@@ -1,0 +1,53 @@
+{
+	"name": "town5",
+	"plugin-id": "Sprite",
+	"sid": 547441543530027,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 1.159375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9394722,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.003125,
+								0.5,
+								0.003125,
+								0.998003992015968,
+								0.003125,
+								0.5538922155688623,
+								0.921875,
+								0.5,
+								0.928125,
+								0.4471057884231537,
+								0.915625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 420736606703608,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

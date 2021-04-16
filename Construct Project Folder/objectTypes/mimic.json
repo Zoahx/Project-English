@@ -1,0 +1,63 @@
+{
+	"name": "Mimic",
+	"plugin-id": "Sprite",
+	"sid": 614442898969284,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 391695923801991
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 227,
+						"height": 174,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6249119,
+						"collisionPoly": {
+							"points": [
+								0.2643171806167401,
+								0.3448275862068966,
+								0.5,
+								0.05172413793103448,
+								0.748898678414097,
+								0.3218390804597701,
+								0.775330396475771,
+								0.5,
+								0.9118942731277533,
+								0.8850574712643678,
+								0.5,
+								0.9885057471264368,
+								0.11013215859030837,
+								0.8505747126436781,
+								0.0881057268722467,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 903805902119734,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

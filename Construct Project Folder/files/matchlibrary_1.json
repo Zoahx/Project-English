@@ -1,0 +1,21 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "MP_1": "Zebra",
+        "MS_1": "Kangaroo",
+        "MP_2": "Red",
+        "MS_2": "White",
+        "MP_3": "Saturday",
+        "MS_3": "Sunday",
+        "MP_4": "Tall",
+        "MS_4": "Short",
+        "MP_5": "Hot",
+        "MS_5": "Cold",
+        "MP_6": "May",
+        "MS_6": "April",
+        "MP_7": "Hard",
+        "MS_7": "Soft",
+        "MP_8": "Boy",
+        "MS_8": "Girl"
+    }
+}

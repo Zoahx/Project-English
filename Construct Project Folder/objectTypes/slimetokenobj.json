@@ -1,0 +1,75 @@
+{
+	"name": "SlimeTokenObj",
+	"plugin-id": "Sprite",
+	"sid": 417174388846659,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isVisible",
+			"type": "boolean",
+			"desc": "",
+			"sid": 190931431287440
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 584768797876245
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 337483268111119
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2000,
+						"height": 2000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5301970,
+						"collisionPoly": {
+							"points": [
+								0.222,
+								0.222,
+								0.5,
+								0.092,
+								0.7915,
+								0.208,
+								0.903,
+								0.5,
+								0.773,
+								0.773,
+								0.5,
+								0.8715,
+								0.24,
+								0.7595,
+								0.1245,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 728396682924863,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

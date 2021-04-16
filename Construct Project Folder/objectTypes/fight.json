@@ -1,0 +1,21 @@
+{
+	"name": "Fight",
+	"plugin-id": "Button",
+	"sid": 750455835070087,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Destroy",
+			"type": "boolean",
+			"desc": "",
+			"sid": 981041589506163
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 164542546685404
+		}
+	]
+}

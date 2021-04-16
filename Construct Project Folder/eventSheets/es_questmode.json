@@ -1,0 +1,6538 @@
+{
+	"name": "ES_QuestMode",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "WarriorScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 826733964458557
+		},
+		{
+			"eventType": "variable",
+			"name": "MageScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 262411101984466
+		},
+		{
+			"eventType": "variable",
+			"name": "DefenderScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 739199761986927
+		},
+		{
+			"eventType": "variable",
+			"name": "curAdvLayout",
+			"type": "string",
+			"initialValue": "",
+			"comment": "the current adventure layout the player is on",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 994685718484360
+		},
+		{
+			"eventType": "variable",
+			"name": "isNewGame",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 631564478742422
+		},
+		{
+			"eventType": "variable",
+			"name": "curEnemy",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 296638289010172
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerJob",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 455166991498100
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerLevel",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 579293532331012
+		},
+		{
+			"eventType": "variable",
+			"name": "Treasure1Found",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 684528280062669
+		},
+		{
+			"eventType": "variable",
+			"name": "KingDefeated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 372789983808097
+		},
+		{
+			"eventType": "variable",
+			"name": "KingContract",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 320804498602541
+		},
+		{
+			"eventType": "variable",
+			"name": "hasRedArtifact",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 768744204973361
+		},
+		{
+			"eventType": "variable",
+			"name": "hasBlueArtifact",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 392413182536306
+		},
+		{
+			"eventType": "variable",
+			"name": "hasGreenArtifact",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 956329001437498
+		},
+		{
+			"eventType": "variable",
+			"name": "Money",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 161051040510744
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerHudOn",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 184548121137807
+		},
+		{
+			"eventType": "variable",
+			"name": "HasPotion",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 635235731599600
+		},
+		{
+			"eventType": "variable",
+			"name": "StrawberryBought",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 534101934002778
+		},
+		{
+			"eventType": "variable",
+			"name": "isBattling",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 158899311140205
+		},
+		{
+			"eventType": "variable",
+			"name": "Grass3Defeated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 576054921747404
+		},
+		{
+			"eventType": "variable",
+			"name": "Cast1Defeated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 121106240247144
+		},
+		{
+			"eventType": "variable",
+			"name": "Dest4Defeated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 257698998983141
+		},
+		{
+			"eventType": "variable",
+			"name": "inQuizTrap",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 513371984012315
+		},
+		{
+			"eventType": "variable",
+			"name": "KingQuestFlag",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 226585424241710
+		},
+		{
+			"eventType": "variable",
+			"name": "KingKilled",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 373975785119706
+		},
+		{
+			"eventType": "variable",
+			"name": "inConversation",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 302592298463439
+		},
+		{
+			"eventType": "variable",
+			"name": "KnightGuardDefeated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 670983270325552
+		},
+		{
+			"eventType": "variable",
+			"name": "isMovingLeft",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 555769420057273
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SYSTEM",
+			"description": "Events related to system settings, UI and misc  background events.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Save Game",
+					"description": "save players current game",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "SaveGame",
+									"sid": 297091132893175
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 817798857000228,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "save",
+									"objectClass": "System",
+									"sid": 641186083437381,
+									"parameters": {
+										"slot": "\"mysave1\""
+									}
+								},
+								{
+									"type": "script",
+									"script": "alert(\"Game Saved to mysave1!\")"
+								}
+							],
+							"sid": 975850901833263
+						}
+					],
+					"sid": 613813019687083
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Debug",
+					"description": "debugging events",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Debug",
+									"sid": 984643986821230
+								}
+							],
+							"actions": [],
+							"sid": 119870891897939
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 671709318547610,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemies",
+									"sid": 776054092737517,
+									"parameters": {
+										"instance-variable": "isDestroyed",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 964186823147428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 473825364456159,
+									"parameters": {
+										"key": 72
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "Debug",
+									"sid": 559197463839359,
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Debug",
+									"sid": 248115891547773,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 975762012408595
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 189047304610766,
+									"parameters": {
+										"key": 77
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 441345108149101,
+									"parameters": {
+										"variable": "Money",
+										"value": "10000"
+									}
+								}
+							],
+							"sid": 876816637173617
+						}
+					],
+					"sid": 833456679247885
+				}
+			],
+			"sid": 320144412781791
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "LAYOUT START",
+			"description": "Events that run during the start of the layout, under (almost) all circumstances.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Initialize",
+					"description": "Start of Layout base events",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 830707234646910
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 859996602123968,
+									"parameters": {
+										"variable": "isBattling"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 376965818995733,
+									"parameters": {
+										"variable": "inQuizTrap"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 922445346815369,
+									"parameters": {
+										"variable": "inConversation"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 807171383754732,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"value": "LayoutName"
+									}
+								},
+								{
+									"type": "script",
+									"script": "getLayoutID(runtime);\n",
+									"disabled": true
+								},
+								{
+									"type": "script",
+									"script": "ReSpawn(runtime);"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 493111719121765,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Classes",
+									"sid": 961791886701594,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"right\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 157891285115688,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 418738670205005,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area5\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 875604333520577,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area4\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 998402492783800,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Classes",
+											"sid": 139159124366900,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 689479668678331,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 905317926334241,
+											"parameters": {
+												"variable": "isMovingLeft"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Classes",
+											"sid": 718208089207031,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 771860754135172
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 613075049999464,
+									"parameters": {
+										"variable": "PlayerLevel",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Classes",
+									"sid": 436551663607269,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 351648461564341
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 339897704631410,
+									"parameters": {
+										"variable": "PlayerLevel",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Classes",
+									"sid": 180846639980635,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 281448008461831
+						}
+					],
+					"sid": 301557118658887
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Enemy Flags",
+					"description": "Flags that signal to destroy defeated enemies.",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 390620868054567,
+									"parameters": {
+										"variable": "curEnemy",
+										"comparison": 0,
+										"value": "\"Victory\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 108289764162933,
+									"parameters": {
+										"variable": "isBattling"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Fight",
+									"sid": 476154201536938,
+									"parameters": {
+										"instance-variable": "Destroy",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemies",
+									"sid": 921231280777061,
+									"parameters": {
+										"instance-variable": "isDestroyed",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "SlimeTokenObj",
+									"sid": 125488592867671,
+									"parameters": {
+										"instance-variable": "isVisible",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 146303994260925,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"\""
+									}
+								}
+							],
+							"sid": 736378326864470
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemies",
+									"sid": 658795868040931,
+									"parameters": {
+										"instance-variable": "isDestroyed"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Enemies",
+									"sid": 751645410281196
+								}
+							],
+							"sid": 876413898912245
+						}
+					],
+					"sid": 380167741112581
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Unlockables",
+					"description": "windows, Buttons and other objects that unlock\nunder certain conditions at the layout start",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 648456220499914,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area1\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 233837840253566,
+									"parameters": {
+										"variable": "KnightGuardDefeated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "EnterCastle",
+									"sid": 406082433409190,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "EnterCastle",
+									"sid": 894755633333839,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 802580158665937
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "KnightAxeCommon",
+									"sid": 101332370674780,
+									"parameters": {
+										"instance-variable": "isDestroyed"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 118603205728497,
+									"parameters": {
+										"variable": "KnightGuardDefeated",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 457746527865957
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "mandrake",
+									"sid": 283240644637179,
+									"parameters": {
+										"instance-variable": "isDestroyed"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 140623852180271,
+									"parameters": {
+										"variable": "Grass3Defeated",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 830918491648421
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 169247186782003,
+									"parameters": {
+										"variable": "Grass3Defeated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "moveRight",
+									"sid": 560872690772272,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "moveRight",
+									"sid": 962812167084651,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 159212196875784
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 216815541155402,
+									"parameters": {
+										"variable": "Cast1Defeated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "EnterCastle",
+									"sid": 150166491318340,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "EnterCastle",
+									"sid": 734761071509827,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 219347166645428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 464395033750580,
+									"parameters": {
+										"variable": "Treasure1Found"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 347018955612062,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "TreasureChest",
+									"sid": 191695670385396,
+									"parameters": {
+										"instance-variable": "Defeated",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 753718335444469
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 305385108100507,
+									"parameters": {
+										"variable": "KingKilled"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "King",
+									"sid": 586557511113563
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Soldier",
+									"sid": 167005398805803
+								}
+							],
+							"sid": 413731138134557
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 419821815803032,
+									"parameters": {
+										"variable": "KingKilled"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 209207756509919,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Talk",
+									"sid": 351779124992698
+								}
+							],
+							"sid": 376658308637609
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 596111865350380,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Port_Area1\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 587931974067533,
+									"parameters": {
+										"variable": "KingKilled"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Talk",
+									"sid": 512079527336846
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "EnterCastle",
+									"sid": 100039287773493,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 347485763423521
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 338341574982338,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Port_Area1\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 861393154375804,
+									"parameters": {
+										"variable": "KingQuestFlag"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Talk",
+									"sid": 164353403919930
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "EnterCastle",
+									"sid": 143435276806888,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 445407586250485
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 282901259181124,
+									"parameters": {
+										"variable": "hasRedArtifact"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Artifact1",
+									"sid": 926231501634592
+								},
+								{
+									"id": "destroy",
+									"objectClass": "CaveBoss",
+									"sid": 797328398813663
+								}
+							],
+							"sid": 222164526230729
+						}
+					],
+					"sid": 140810892237351
+				}
+			],
+			"sid": 289175758112129
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "NEW GAME START",
+			"description": "Events that run at the start of a new game.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 504931621686361
+						}
+					],
+					"actions": [],
+					"sid": 191777063377731,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 689506071390386,
+									"parameters": {
+										"variable": "isNewGame"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "NewGameQuestion_1",
+									"sid": 210310912771121
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 428619830425604,
+									"parameters": {
+										"variable": "isNewGame",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 713722136617470,
+									"parameters": {
+										"group-name": "\"NEW GAME START\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 882848182504775
+						}
+					]
+				}
+			],
+			"sid": 777139722434854
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MOVEMENT",
+			"description": "Events related to moving the player to new\nareas and its UI. ",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Move Right",
+					"description": "Where to go when \"right\" button is pressed",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "moveRight",
+									"sid": 350566781837487
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Go to layout implied in a \"right\" direction based on current layout."
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 843138884069572,
+									"parameters": {
+										"variable": "isMovingLeft",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 442558997442558,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 833998093531131,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 608497872468639,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 853307871595731
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 154802054770889,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Forest_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 880249372110322,
+											"parameters": {
+												"layout": "Fort_Area1"
+											}
+										}
+									],
+									"sid": 424009823497357
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 828879318875006,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 905445679241927,
+											"parameters": {
+												"layout": "Grass_Area3"
+											}
+										}
+									],
+									"sid": 692206096869146
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 186289712524432,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 203122988996970,
+											"parameters": {
+												"layout": "Port_Area1"
+											}
+										}
+									],
+									"sid": 408892304508090
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 724104202002185,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 794244264740521,
+											"parameters": {
+												"layout": "Grass_Area4"
+											}
+										}
+									],
+									"sid": 103794366865239
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 754358667867141,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 444537041344236,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 323834813458849
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 758386679396858,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 721710767046549,
+											"parameters": {
+												"layout": "Castle_Area2"
+											}
+										}
+									],
+									"sid": 425019492106748
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 137065602529777,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Tower_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 550540871364690,
+											"parameters": {
+												"layout": "Grass_Area5"
+											}
+										}
+									],
+									"sid": 700485304851354
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 249777537250364,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 954624358706655,
+											"parameters": {
+												"layout": "Desert_Area4"
+											}
+										}
+									],
+									"sid": 866799218216035
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 453922355334674,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 424966404212876,
+											"parameters": {
+												"layout": "Desert_Area2"
+											}
+										}
+									],
+									"sid": 283994787261117
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 211379787752766,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 190304246589156,
+											"parameters": {
+												"layout": "Desert_Area3"
+											}
+										}
+									],
+									"sid": 277037048898456
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 828537410812014,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 683780607660256,
+											"parameters": {
+												"layout": "Town_Area2"
+											}
+										}
+									],
+									"sid": 790424642251826
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 707900216506412,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Port_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 851640743976769,
+											"parameters": {
+												"layout": "Town_Area1"
+											}
+										}
+									],
+									"sid": 186245630446145
+								}
+							]
+						}
+					],
+					"sid": 282056754031452
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Move Left",
+					"description": "Where to go when \"left\" button is pressed",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "moveLeft",
+									"sid": 903812783280610
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Go to layout implied in a \"left\" direction based on current layout."
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 861415151608511,
+									"parameters": {
+										"variable": "isMovingLeft",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 611567455954011,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 750383977103921,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 465886515991476,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 576886058584857
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 829861626556367,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 102215687372035,
+											"parameters": {
+												"layout": "Grass_Area4"
+											}
+										}
+									],
+									"sid": 571164051461645
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 327055255378461,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 943369892882545,
+											"parameters": {
+												"layout": "Grass_Area5"
+											}
+										}
+									],
+									"sid": 307034351744850
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 543064747214013,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 678415347321807,
+											"parameters": {
+												"layout": "Castle_Area3"
+											}
+										}
+									],
+									"sid": 883023547614683
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 232754225090804,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Port_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 482310304753903,
+											"parameters": {
+												"layout": "Grass_Area3"
+											}
+										}
+									],
+									"sid": 374858302582517
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 516787304495504,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 615450401318936,
+											"parameters": {
+												"layout": "Town_Area1"
+											}
+										}
+									],
+									"sid": 354492419910232
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 810845750562585,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 922766045122370,
+											"parameters": {
+												"layout": "Desert_Area2"
+											}
+										}
+									],
+									"sid": 633163993876849
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 490415388617747,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 435190278596625,
+											"parameters": {
+												"layout": "Desert_Area6"
+											}
+										}
+									],
+									"sid": 277214917412664
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 362044127279088,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 971485668215964,
+											"parameters": {
+												"layout": "Desert_Area5"
+											}
+										}
+									],
+									"sid": 497872728496480
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 618897632622418,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 801270514140431,
+											"parameters": {
+												"layout": "Desert_Area4"
+											}
+										}
+									],
+									"sid": 377748796194211
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 406932390851739,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 200567445213947,
+											"parameters": {
+												"layout": "Port_Area1"
+											}
+										}
+									],
+									"sid": 543221699278930
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 270530487861519,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Forest_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 586575262745614,
+											"parameters": {
+												"layout": "Forest_Area1"
+											}
+										}
+									],
+									"sid": 507706432090709
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 547689673385766,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 600259563415402,
+											"parameters": {
+												"layout": "Forest_Area2"
+											}
+										}
+									],
+									"sid": 151940587016683
+								}
+							]
+						}
+					],
+					"sid": 821153763709458
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Move Up",
+					"description": "Where to go when \"up\" button is pressed",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "moveUp",
+									"sid": 345801965873710
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Go to layout implied in an \"up\" direction based on current layout."
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 423875640565877,
+									"parameters": {
+										"variable": "isMovingLeft",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 807052900821128,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 103776240101318,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 778120318907927,
+											"parameters": {
+												"layout": "Town_Area3"
+											}
+										}
+									],
+									"sid": 518783189779907
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 623885586991124,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Forest_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 610125466531616,
+											"parameters": {
+												"layout": "Forest_Area2"
+											}
+										}
+									],
+									"sid": 242930057199468
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 119751644692944,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 677225746838106,
+											"parameters": {
+												"layout": "Fort_Area3"
+											}
+										}
+									],
+									"sid": 641779743819107
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 605960836938617,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 819616148372195,
+											"parameters": {
+												"layout": "Castle_Area1"
+											}
+										}
+									],
+									"sid": 642513266137368
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 148854865396213,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 726737594757981,
+											"parameters": {
+												"layout": "Tower_Area1"
+											}
+										}
+									],
+									"sid": 696466475285429
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 850186973194566,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 321625176940625,
+											"parameters": {
+												"layout": "Town_Area4"
+											}
+										}
+									],
+									"sid": 641450011813044
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 493226847683313,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 237288884579873,
+											"parameters": {
+												"layout": "Grass_Area4"
+											}
+										}
+									],
+									"sid": 154773918544865
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 363942170686381,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 795495156119378,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 972380801006646
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 702324330171048,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 352636703314792,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 856303434998132
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 393202808177066,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 521096277727452,
+											"parameters": {
+												"layout": "Desert_Area1"
+											}
+										}
+									],
+									"sid": 543555301274536
+								}
+							]
+						}
+					],
+					"sid": 403473411311652
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Move Down",
+					"description": "Where to go when \"down\" button is pressed",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "moveDown",
+									"sid": 426347112158372
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Go to layout implied in an \"down\" direction based on current layout."
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 918237904973409,
+									"parameters": {
+										"variable": "isMovingLeft",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 451947308318005,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 735661317331095,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 491223167973050,
+											"parameters": {
+												"layout": "Grass_Area2"
+											}
+										}
+									],
+									"sid": 471946917879910
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 759852203689326,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 575607729122204,
+											"parameters": {
+												"layout": "Fort_Area2"
+											}
+										}
+									],
+									"sid": 988397395562404
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 939832719430929,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 609985272906495,
+											"parameters": {
+												"layout": "Fort_Area1"
+											}
+										}
+									],
+									"sid": 133710779060156
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 259914127889014,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 646909218561050,
+											"parameters": {
+												"layout": "Castle_Area1"
+											}
+										}
+									],
+									"sid": 671146915465635
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 453596466039903,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 534293609635574,
+											"parameters": {
+												"layout": "Town_Area2"
+											}
+										}
+									],
+									"sid": 518280045345806
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 655116944394257,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 974711922823048,
+											"parameters": {
+												"layout": "Town_Area3"
+											}
+										}
+									],
+									"sid": 524403342807326
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 264051502182393,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 182769316881686,
+											"parameters": {
+												"layout": "Desert_Area1"
+											}
+										}
+									],
+									"sid": 207854761302051
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 893145027597444,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 842299181731820,
+											"parameters": {
+												"layout": "Desert_Area2"
+											}
+										}
+									],
+									"sid": 625115311680475
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 291025615525979,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area7\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 623695818162139,
+											"parameters": {
+												"layout": "Desert_Area5"
+											}
+										}
+									],
+									"sid": 721769817194897
+								}
+							]
+						}
+					],
+					"sid": 335082180905745
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Enter Area",
+					"description": "When entering new areas",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "EnterCastle",
+									"sid": 475022296772296
+								}
+							],
+							"actions": [],
+							"sid": 238913630041273,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 162653967632381,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 858013301331261,
+											"parameters": {
+												"layout": "Castle_Area2"
+											}
+										}
+									],
+									"sid": 763790146416515
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 917048485258921,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Port_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 211253603752038,
+											"parameters": {
+												"layout": "Forest_Area1"
+											}
+										}
+									],
+									"sid": 910443383801829
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 208531071166414,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Forest_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 156792550725559,
+											"parameters": {
+												"layout": "Port_Area1"
+											}
+										}
+									],
+									"sid": 986052682509343
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 234142113268032,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 454337157734925,
+											"parameters": {
+												"layout": "Town_Area5"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Classes",
+											"sid": 762754791198822,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 748850612426109
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 882760269078635,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 596777085988350,
+											"parameters": {
+												"layout": "Fort_Area2"
+											}
+										}
+									],
+									"sid": 346533427572456
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Enter",
+									"sid": 142532699752141
+								}
+							],
+							"actions": [],
+							"sid": 581552656123193,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 686817887486790,
+											"parameters": {
+												"variable": "hasBlueArtifact"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 853674990760606,
+											"parameters": {
+												"variable": "hasGreenArtifact"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 902954940355756,
+											"parameters": {
+												"variable": "hasRedArtifact"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 721547736231495,
+											"parameters": {
+												"layout": "GameWin"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "TextFilter",
+											"sid": 868703327948990,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "EventText",
+											"sid": 381079212159321,
+											"parameters": {
+												"text": "\"....oh this actually isn't ready yet, sorry...\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 825168125594695,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "TextFilter",
+											"sid": 796818934264595,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "EventText",
+											"sid": 624157667134285,
+											"parameters": {
+												"text": "\"\""
+											}
+										}
+									],
+									"sid": 149555067348297
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 373271458709654
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "TextFilter",
+											"sid": 460287682454400,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "EventText",
+											"sid": 183822201058113,
+											"parameters": {
+												"text": "\"You must bring all three treasures to enter the tower of God...\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 432694389160823,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "TextFilter",
+											"sid": 955081109785250,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "EventText",
+											"sid": 231398111036810,
+											"parameters": {
+												"text": "\"\""
+											}
+										}
+									],
+									"sid": 131803992920187
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 901649172880001,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 952595974414867,
+											"parameters": {
+												"layout": "Town_Area5"
+											}
+										}
+									],
+									"sid": 715316838207573
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 517634539128599,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 650571199033485,
+											"parameters": {
+												"layout": "Fort_Area2"
+											}
+										}
+									],
+									"sid": 949081843060164
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Exit",
+									"sid": 576899445046572
+								}
+							],
+							"actions": [],
+							"sid": 619939275029424,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 576401472955608,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 144439727553695,
+											"parameters": {
+												"layout": "Town_Area2"
+											}
+										}
+									],
+									"sid": 309767043949001
+								}
+							]
+						}
+					],
+					"sid": 999758863634016
+				}
+			],
+			"sid": 693736854845792
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ACTIONS",
+			"description": "Events related to action events the player can do and its UI. ",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "New Game Answers",
+					"description": "Answers the player may choose when answering \"New Game Questions\" function events (refer to FUNCTIONS LIST > New Game Questions )",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Feeling",
+									"sid": 321367664229126
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "go to Question 2(day of the week question) when answer button is clicked"
+								}
+							],
+							"sid": 831748928944949,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Feeling",
+											"sid": 799791822327070,
+											"parameters": {
+												"text-to-compare": "\"Good\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 610813705853215,
+											"parameters": {
+												"variable": "DefenderScore",
+												"value": "2"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_2",
+											"sid": 294915429067112
+										}
+									],
+									"sid": 690382691197286
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Feeling",
+											"sid": 773212984476959,
+											"parameters": {
+												"text-to-compare": "\"Okay\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 869755100554256,
+											"parameters": {
+												"variable": "MageScore",
+												"value": "2"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_2",
+											"sid": 298682600469401
+										}
+									],
+									"sid": 356704538654981
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Feeling",
+											"sid": 481428682997591,
+											"parameters": {
+												"text-to-compare": "\"Bad\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 552763725242919,
+											"parameters": {
+												"variable": "WarriorScore",
+												"value": "2"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_2",
+											"sid": 219514992396818
+										}
+									],
+									"sid": 962538300442422
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Days",
+									"sid": 657505388470280
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "go to Question 3(Weather question) when answer button is clicked"
+								}
+							],
+							"sid": 103794026876734,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Days",
+											"sid": 978217970024929,
+											"parameters": {
+												"text-to-compare": "\"Monday\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 595857591689436,
+											"parameters": {
+												"variable": "WarriorScore",
+												"value": "3"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_3",
+											"sid": 261691174216697
+										}
+									],
+									"sid": 553240048545350
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Days",
+											"sid": 331197885784763,
+											"parameters": {
+												"text-to-compare": "\"Tuesday\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 586464231920029,
+											"parameters": {
+												"variable": "WarriorScore",
+												"value": "3"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_3",
+											"sid": 625098864340537
+										}
+									],
+									"sid": 539231579152837
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Days",
+											"sid": 829793993845101,
+											"parameters": {
+												"text-to-compare": "\"Wednesday\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 369040826473436,
+											"parameters": {
+												"variable": "MageScore",
+												"value": "3"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_3",
+											"sid": 321587177805383
+										}
+									],
+									"sid": 170855301492839
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Days",
+											"sid": 868529513174142,
+											"parameters": {
+												"text-to-compare": "\"Thursday\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 528002149400513,
+											"parameters": {
+												"variable": "MageScore",
+												"value": "3"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_3",
+											"sid": 797938475770624
+										}
+									],
+									"sid": 691763948909998
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Days",
+											"sid": 557843183502931,
+											"parameters": {
+												"text-to-compare": "\"Friday\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 111086261776674,
+											"parameters": {
+												"variable": "DefenderScore",
+												"value": "3"
+											}
+										},
+										{
+											"callFunction": "NewGameQuestion_3",
+											"sid": 761273253839969
+										}
+									],
+									"sid": 660720348661984
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Weather",
+									"sid": 772806837825503
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Create character with total score and give control to player when answer button is clicked"
+								}
+							],
+							"sid": 578114222758324,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 594303933564719,
+											"parameters": {
+												"text-to-compare": "\"Sunny\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 395393140744851,
+											"parameters": {
+												"variable": "WarriorScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 277011230032243
+										}
+									],
+									"sid": 617492794228037
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 372290747590052,
+											"parameters": {
+												"text-to-compare": "\"Rainy\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 728474049035642,
+											"parameters": {
+												"variable": "DefenderScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 707433033759362
+										}
+									],
+									"sid": 446941060491946
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 285843853025934,
+											"parameters": {
+												"text-to-compare": "\"Snowing\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 167485943494878,
+											"parameters": {
+												"variable": "MageScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 347018406604720
+										}
+									],
+									"sid": 261561419643266
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 956736559966950,
+											"parameters": {
+												"text-to-compare": "\"Hot\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 917843003063856,
+											"parameters": {
+												"variable": "WarriorScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 315692600461887
+										}
+									],
+									"sid": 281228311949324
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 349931880474300,
+											"parameters": {
+												"text-to-compare": "\"Cold\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 222079437805192,
+											"parameters": {
+												"variable": "DefenderScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 884972826870198
+										}
+									],
+									"sid": 247012320660727
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Weather",
+											"sid": 397538250920822,
+											"parameters": {
+												"text-to-compare": "\"Cloudy\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 518220568749543,
+											"parameters": {
+												"variable": "MageScore",
+												"value": "4"
+											}
+										},
+										{
+											"callFunction": "MakeCharacter",
+											"sid": 387626188506445
+										}
+									],
+									"sid": 977683298356350
+								}
+							]
+						}
+					],
+					"sid": 325033564099866
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PlayerData",
+					"description": "View Players hud data",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 623106930824813,
+									"parameters": {
+										"object": "Classes"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 632802964272973,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 893921779885781,
+											"parameters": {
+												"variable": "PlayerHudOn"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"script": "LoadPlayerData(runtime)\n"
+										},
+										{
+											"id": "destroy",
+											"objectClass": "WoodUI2",
+											"sid": 503987902060949
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 399442138995372,
+											"parameters": {
+												"variable": "PlayerHudOn",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 325529325462191
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 818583895936650
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CallPlayerHud",
+											"sid": 833462649664986
+										}
+									],
+									"sid": 977834480886734
+								}
+							]
+						}
+					],
+					"sid": 344879715170902
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Search",
+					"description": "Search objects",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 839972100605197,
+									"parameters": {
+										"object": "TreasureChest"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 356317913165509,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 420690861401082,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area2\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "TreasureChest",
+											"sid": 515249813779482,
+											"parameters": {
+												"instance-variable": "Defeated"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 778927540195194,
+											"parameters": {
+												"variable": "inQuizTrap",
+												"value": "true"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 286668144274005,
+											"parameters": {
+												"layout": "Quiz"
+											}
+										}
+									],
+									"sid": 675227659773595
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 873106372642851,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area5\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "TreasureChest",
+											"sid": 265437710241298,
+											"parameters": {
+												"instance-variable": "Defeated"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 978345170944503,
+											"parameters": {
+												"variable": "inQuizTrap",
+												"value": "true"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 978441791266816,
+											"parameters": {
+												"layout": "Quiz"
+											}
+										}
+									],
+									"sid": 803504110390034
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 808116675290474,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "TreasureChest",
+											"sid": 132572993530469,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "SlimeTokenObj",
+											"sid": 367769365816474,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "restart-fade",
+											"objectClass": "SlimeTokenObj",
+											"sid": 197021803875321,
+											"behaviorType": "Fade"
+										}
+									],
+									"sid": 608556908469887
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 467608399948790,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area5\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "TreasureChest",
+											"sid": 916042415203127,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "SlimeTokenObj",
+											"sid": 649372077748727,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "restart-fade",
+											"objectClass": "SlimeTokenObj",
+											"sid": 519115768295336,
+											"behaviorType": "Fade"
+										}
+									],
+									"sid": 273369886123155
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 677362280646037,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "TreasureChest",
+											"sid": 360854706850150,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "SlimeTokenObj",
+											"sid": 312876285342813,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "restart-fade",
+											"objectClass": "SlimeTokenObj",
+											"sid": 875357072166136,
+											"behaviorType": "Fade"
+										}
+									],
+									"sid": 192295163045530
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 579385283268774,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Town_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "TreasureChest",
+											"sid": 437055454441248,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "SlimeTokenObj",
+											"sid": 481967225663525,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "restart-fade",
+											"objectClass": "SlimeTokenObj",
+											"sid": 595495327767960,
+											"behaviorType": "Fade"
+										}
+									],
+									"sid": 599313034451812
+								}
+							]
+						}
+					],
+					"sid": 956781286631492
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pick Up",
+					"description": "Events related to picking up objects",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 422436352424561,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 107198520919907,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Grass_Area4\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 885304133166939
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 133132678007736,
+									"parameters": {
+										"variable": "Money",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 407981613091782,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 364072933779503
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 959393981239926,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 109664546268743,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Grass_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 262785272864270
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 271728265165555,
+									"parameters": {
+										"variable": "Money",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 672561513207039,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 346198895274961
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 863606411306959,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 828621621083293,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Desert_Area4\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 336802159210007
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 668378806472830,
+									"parameters": {
+										"variable": "Money",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 976482367366887,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 827616939719260
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 148750701225919,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 274055129038640,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 539853863116281
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 960796664992530,
+									"parameters": {
+										"variable": "Money",
+										"value": "200"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 446762624633553,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 350162249412469
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 116135456804411,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 458006035595401,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 766584504758320
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 717119016013222,
+									"parameters": {
+										"variable": "Money",
+										"value": "300"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 854424440760513,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 446622436871414
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 669400644948995,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 975137527871035,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Desert_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 283932558148334
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 530182273629294,
+									"parameters": {
+										"variable": "Money",
+										"value": "300"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 703590878700811,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 700372261967705
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 445343668104516,
+									"parameters": {
+										"object": "SlimeTokenObj"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 664947222207720,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Town_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SlimeTokenObj",
+									"sid": 178028550265465
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 325294490027195,
+									"parameters": {
+										"variable": "Money",
+										"value": "300"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 801889791205190,
+									"parameters": {
+										"text": "Money"
+									}
+								}
+							],
+							"sid": 684089038725385
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 109707638601588,
+									"parameters": {
+										"object": "Artifact1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 945598467934113,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"Cave\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 300193418354924,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaveBoss",
+									"sid": 684596136358248,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 635804529910165,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 810274586565162,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "true"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 159380933854578,
+									"parameters": {
+										"layout": "Matching_Battle_Cave"
+									}
+								}
+							],
+							"sid": 642554913579222
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 315078094744789,
+									"parameters": {
+										"object": "Artifact4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Artifact4",
+									"sid": 560899589205667
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 870630255718341,
+									"parameters": {
+										"variable": "hasGreenArtifact",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 370081423546994
+						}
+					],
+					"sid": 475796676304776
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Buy",
+					"description": "Events related to buying items",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 380647110249703,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Town_Area5\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 767515164260402,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-tap-object",
+											"objectClass": "Touch",
+											"sid": 282860874361167,
+											"parameters": {
+												"object": "Strawberry"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 644618897456316,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 470478993823947,
+													"parameters": {
+														"variable": "Money",
+														"comparison": 5,
+														"value": "500"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 975347686444616,
+													"parameters": {
+														"variable": "StrawberryBought",
+														"value": "true"
+													}
+												},
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 335278205868906,
+													"parameters": {
+														"variable": "Money",
+														"value": "500"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "Strawberry",
+													"sid": 679673234070372,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"type": "script",
+													"script": "alert(\"You can pick up and eat the straberry now :)\")\n"
+												}
+											],
+											"sid": 526180733618378
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 106844475199614,
+													"parameters": {
+														"variable": "StrawberryBought"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"script": "alert(\"Broke boi...\")"
+												}
+											],
+											"sid": 711326861174190
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-tap-object",
+											"objectClass": "Touch",
+											"sid": 554954324304729,
+											"parameters": {
+												"object": "heartObject"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 390016867791679,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 398626387387890,
+													"parameters": {
+														"variable": "Money",
+														"comparison": 5,
+														"value": "300"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 963334042914641,
+													"parameters": {
+														"variable": "Money",
+														"value": "300"
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "heartObject",
+													"sid": 712726026596513
+												}
+											],
+											"sid": 687374164302524
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 369919615134334
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"script": "alert(\"Broke boi...\")"
+												}
+											],
+											"sid": 885204739060571
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-tap-object",
+											"objectClass": "Touch",
+											"sid": 904444054561587,
+											"parameters": {
+												"object": "Artifact2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 206303799116233,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 772555788987034,
+													"parameters": {
+														"variable": "Money",
+														"comparison": 5,
+														"value": "1000"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 596959132988268,
+													"parameters": {
+														"variable": "hasBlueArtifact",
+														"value": "true"
+													}
+												},
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 690511887144644,
+													"parameters": {
+														"variable": "Money",
+														"value": "1000"
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "Artifact2",
+													"sid": 264175636088087
+												}
+											],
+											"sid": 788956992556408
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 592323695014566
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"script": "alert(\"Broke boi...\")"
+												}
+											],
+											"sid": 552642164359724
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 290412799806378
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Talk",
+					"description": "When talking to NPCs",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Quest Talk",
+							"description": "\"Quest Talk\" events",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "King's Quest",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-clicked",
+													"objectClass": "Yes",
+													"sid": 593886163658537
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 115554810660315,
+													"parameters": {
+														"variable": "KingQuestFlag",
+														"value": "true"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 604331099911240,
+													"parameters": {
+														"seconds": "0.2"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 173311987108213,
+													"parameters": {
+														"layout": "Castle_Area3"
+													}
+												}
+											],
+											"sid": 582218931304869
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-clicked",
+													"objectClass": "No",
+													"sid": 655823736492995
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 126145457727904,
+													"parameters": {
+														"variable": "curEnemy",
+														"value": "\"King\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 627413865865731,
+													"parameters": {
+														"seconds": "0.2"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 936254537661585,
+													"parameters": {
+														"layout": "Matching_Battle_Castle"
+													}
+												}
+											],
+											"sid": 808959822242387
+										}
+									],
+									"sid": 507722179361618
+								}
+							],
+							"sid": 901027242002021
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Basic Talk",
+							"description": "Standard \"Talk\" event",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-clicked",
+											"objectClass": "Talk",
+											"sid": 675987741103965
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Talking",
+											"sid": 740115939024651
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "Talk",
+											"sid": 669322933464575,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 781251937776567,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 586201419856565,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Castle_Area3\""
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 508656304680295,
+													"parameters": {
+														"variable": "KingQuestFlag"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 120877047161989,
+													"parameters": {
+														"layout": "QuestSlimeKing"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 522817458324856,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 216510116920442,
+													"parameters": {
+														"text": "\"Good luck! Take the boat to the island!\""
+													}
+												}
+											],
+											"sid": 695179465030032
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 519224270257974,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Castle_Area3\""
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 150534685381574,
+													"parameters": {
+														"variable": "RedBullDead"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 335523122436538,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 813827011035549,
+													"parameters": {
+														"text": "\"Great job! Take this artifact!\""
+													}
+												}
+											],
+											"sid": 938911613890803
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 921570330300622,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Fort_Area3\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 632506729689482,
+													"parameters": {
+														"variable": "inConversation",
+														"value": "true"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 290806177083363,
+													"parameters": {
+														"layout": "BanditKing"
+													}
+												}
+											],
+											"sid": 570121820793701
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 465446687104454,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Castle_Area3\""
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 760160721049722,
+													"parameters": {
+														"variable": "KingQuestFlag"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 200079712956955,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 220578763877541,
+													"parameters": {
+														"text": "\"Good luck! Take the boat to the island!\""
+													}
+												}
+											],
+											"sid": 299497549744470
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 993094612899033,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Port_Area1\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 675115340586833,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 524194676051251,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Talk",
+													"sid": 233821941853513,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 577566596914696,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 986631974586479
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 326007013150992,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Town_Area5\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 964272111993266,
+													"parameters": {
+														"text": "\"Welcome to my shop!\r\n(Double click the item to buy!)\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 985169026280635,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 878577470751202,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Talk",
+													"sid": 564918152264352,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 765861109818484,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 146473577920244
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 190815611501840,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Town_Area1\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 180783115158585,
+													"parameters": {
+														"text": "\"Welcome to happy slime town!\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 138366884486206,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 943944624773957,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Talk",
+													"sid": 692978918140035,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 981191511944393,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 548300704151212
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 817689880926139,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Town_Area2\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 699693017428684,
+													"parameters": {
+														"text": "\"Did you see the magic fruit at the store?\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 433284618995020,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 543657520866087,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Talk",
+													"sid": 901370091991610,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 554018214875940,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 114210007094851
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 921988865514048,
+													"parameters": {
+														"variable": "curAdvLayout",
+														"comparison": 0,
+														"value": "\"Town_Area3\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "TalkText",
+													"sid": 691208100133659,
+													"parameters": {
+														"text": "\"Be careful! There is a bad man somehwere!\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 554388472274829,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 771174408727251,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Talk",
+													"sid": 837021231816595,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TalkText",
+													"sid": 494164524971022,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 764170187900285
+										}
+									]
+								}
+							],
+							"sid": 774076506461109
+						}
+					],
+					"sid": 409158429878114
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Fight",
+					"description": "Events related to fighting enemies",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Fight",
+									"sid": 337545842223708,
+									"parameters": {
+										"instance-variable": "Destroy"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Fight",
+									"sid": 560255153947066,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 628703688912911
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "Fight",
+									"sid": 133104568448044
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 430392546431801,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 320683310152356,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 650634392644368,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Grass_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 485907229344054,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"Mandrake\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 300437784098488,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 157114044156245,
+											"parameters": {
+												"layout": "GrassA3_Battle"
+											}
+										}
+									],
+									"sid": 567204305851832
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 490318665569948,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 503003744140612,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"AxeMan\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 118243491441142,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 181432803373983,
+											"parameters": {
+												"layout": "CastleA1_Battle"
+											}
+										}
+									],
+									"sid": 222228978374496
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 700358206078853,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Castle_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 492868200144236,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"AxeMan\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 484417092595628,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										}
+									],
+									"sid": 930371132590386
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 199458069676523,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area4\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 388968286977701,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"Lizard\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 882228980332875,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 416041461465923,
+											"parameters": {
+												"layout": "DesertA4_Battle"
+											}
+										}
+									],
+									"sid": 643509262938725
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 688538305523549,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Desert_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 221408725435585,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"Cactus\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 442176317588300,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 994441544590591,
+											"parameters": {
+												"layout": "DesertA3_Battle"
+											}
+										}
+									],
+									"sid": 560644689500968
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 102313523193875,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Forest_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 679380847726199,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"Wolf\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 592093740130773,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 826033815145837,
+											"parameters": {
+												"layout": "ForestA2_Battle"
+											}
+										}
+									],
+									"sid": 226155168622271
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 674143949859306,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 683124289195581,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"Snake\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 506617622080453,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 930385800025657,
+											"parameters": {
+												"layout": "FortA2_Battle"
+											}
+										}
+									],
+									"sid": 655456885393188
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 407487319329127,
+											"parameters": {
+												"variable": "curAdvLayout",
+												"comparison": 0,
+												"value": "\"Fort_Area3\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 555616308529024,
+											"parameters": {
+												"variable": "curEnemy",
+												"value": "\"RedBull\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 479275941477050,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 848065902847887,
+											"parameters": {
+												"layout": "Matching_Battle_Fort"
+											}
+										}
+									],
+									"sid": 879960692577443
+								}
+							]
+						}
+					],
+					"sid": 114867934168238
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Victory",
+					"description": "When player wins battle",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "ContAdv",
+									"sid": 758315896986681
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 738447565186249,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 759968073545803,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"Victory\""
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 806876885138221,
+									"parameters": {
+										"layout": "curAdvLayout"
+									}
+								}
+							],
+							"sid": 646646075544965
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "ContAdv",
+									"sid": 417885576249300
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 300898869394288,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Desert_Area7\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 731262728007339,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 208755942142099,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"Victory\""
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 459308358325292,
+									"parameters": {
+										"layout": "curAdvLayout"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 961054650078020,
+									"parameters": {
+										"variable": "hasRedArtifact",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 413128114329059
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "ContAdv",
+									"sid": 819721514966485
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 188282401463987,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 665424626328478,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 119521663886463,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"Victory\""
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 594345361193497,
+									"parameters": {
+										"layout": "curAdvLayout"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 530332907904609,
+									"parameters": {
+										"variable": "KingKilled",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 946291436986597
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "ContAdv",
+									"sid": 890217092889391
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 838371913841972,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Fort_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 568255864498050,
+									"parameters": {
+										"variable": "isBattling",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 711236805007423,
+									"parameters": {
+										"variable": "curEnemy",
+										"value": "\"Victory\""
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 925598230508899,
+									"parameters": {
+										"layout": "curAdvLayout"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 677470036693209,
+									"parameters": {
+										"variable": "RedBullDead",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 511963353733805,
+									"parameters": {
+										"variable": "isMatchingBattle",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 611177142722018,
+									"parameters": {
+										"variable": "inConversation",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 285760729955521
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "ContAdv",
+									"sid": 166148282561131
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 332963437025281,
+									"parameters": {
+										"variable": "inQuizTrap"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 798062939840265,
+									"parameters": {
+										"variable": "inQuizTrap",
+										"value": "false"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 717845416335158,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 457685994519337,
+									"parameters": {
+										"layout": "curAdvLayout"
+									}
+								}
+							],
+							"sid": 842704221205518
+						}
+					],
+					"sid": 756337837604726
+				}
+			],
+			"sid": 587610523746528
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FUNCTIONS LIST",
+			"description": "Various functions to call and use",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Talking",
+					"functionDescription": "",
+					"functionCategory": "Actions",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TalkText",
+							"sid": 871708186207226,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 453065415840792,
+							"parameters": {
+								"seconds": "15"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TalkText",
+							"sid": 553999490684269,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 609522299829289
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PlayerHud",
+					"description": "Everything related to the player hud",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "CallPlayerHud",
+							"functionDescription": "call the player hud",
+							"functionCategory": "system",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 125499319731902,
+									"parameters": {
+										"variable": "PlayerHudOn",
+										"value": "true"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 861513269572152,
+									"parameters": {
+										"object-to-create": "WoodUI2",
+										"layer": "4",
+										"x": "0",
+										"y": "0",
+										"create-hierarchy": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "guiHeaderClass",
+									"sid": 801293110767485,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "1",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "guiHeaderLevel",
+									"sid": 729405874301906,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "3",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "ui_PlayerClassTxt",
+									"sid": 137006445047969,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "2",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "ui_PlayerLevelTxt",
+									"sid": 334804067183043,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "4",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 963139798349339,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "5",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "pin-to-object-imagepoint",
+									"objectClass": "SlimeTokenUI",
+									"sid": 895608838938225,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "WoodUI2",
+										"image-point": "6",
+										"angle": true,
+										"width-type": "scale",
+										"height-type": "scale",
+										"z": true
+									}
+								},
+								{
+									"id": "move-to-bottom",
+									"objectClass": "WoodUI2",
+									"sid": 505391611733530
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerMoneyTxt",
+									"sid": 296237475258227,
+									"parameters": {
+										"text": "Money"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerLevelTxt",
+									"sid": 870625042127484,
+									"parameters": {
+										"text": "PlayerLevel"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ui_PlayerClassTxt",
+									"sid": 813590862397195,
+									"parameters": {
+										"text": "PlayerJob"
+									}
+								}
+							],
+							"sid": 349374185954680
+						}
+					],
+					"sid": 806018110144314
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "New Game Questions",
+					"description": "Questions asked before making character",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "NewGameQuestion_1",
+							"functionDescription": "How are you feeling today?",
+							"functionCategory": "questions",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "msgBox",
+									"sid": 301938051512065,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "MainMsgText",
+									"sid": 428375043324268,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 736268105155230,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Feeling",
+									"sid": 930752187163220,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Feeling",
+									"sid": 952564487651502,
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 604482973061075
+						},
+						{
+							"functionName": "NewGameQuestion_2",
+							"functionDescription": "What day is it today?",
+							"functionCategory": "questions",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Feeling",
+									"sid": 186736116012429
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 598103466584694,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "MainMsgText",
+									"sid": 236891305922489,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "MainMsgText",
+									"sid": 999692777214105,
+									"parameters": {
+										"text": "\"What day is it today?\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Days",
+									"sid": 700592150642195,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Days",
+									"sid": 446165416676473,
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 124067569395238
+						},
+						{
+							"functionName": "NewGameQuestion_3",
+							"functionDescription": "How's the weather today?",
+							"functionCategory": "questions",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 228016346304429,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "MainMsgText",
+									"sid": 343353981871660,
+									"parameters": {
+										"text": "\"How's the weather today?\""
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Days",
+									"sid": 164779693186025,
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Days",
+									"sid": 591586174380501,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "MainMsgText",
+									"sid": 238654148275937,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Weather",
+									"sid": 857687188749867,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Weather",
+									"sid": 881013951582958,
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 674075631966368
+						}
+					],
+					"sid": 804201474939050
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Generate Character",
+					"description": "Finish new game questions and create character",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "MakeCharacter",
+							"functionDescription": "end question event and make character",
+							"functionCategory": "system",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Weather",
+									"sid": 857335188979967
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 642641900408027,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "msgBox",
+									"sid": 431143676947083,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "MainMsgText",
+									"sid": 352137517316604,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "MainMsgText",
+									"sid": 791214736564989,
+									"parameters": {
+										"text": "\"Start your adventure!\""
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "MainMsgText",
+									"sid": 841184980926495,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.2",
+										"off-time": "0.2",
+										"duration": "3"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 443400170805698,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 962353159283669,
+									"parameters": {
+										"object-to-create": "Ani_light",
+										"layer": "3",
+										"x": "PlayerSpawn.X - 25",
+										"y": "PlayerSpawn.Y - 100",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Ani_light",
+									"sid": 160884219981068,
+									"parameters": {
+										"width": "400",
+										"height": "400"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 301142931059046,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"type": "script",
+									"script": "GenerateCharacter(runtime);"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 664578091295967,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "SlimeRPGDefender",
+									"sid": 493007035805493,
+									"parameters": {
+										"animation": "\"right\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Ani_light",
+									"sid": 791963062149790
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 501799510736530,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "MainMsgText",
+									"sid": 697559510280347,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "moveRight",
+									"sid": 729798249787441,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "moveRight",
+									"sid": 839635251701842,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"callFunction": "CallPlayerHud",
+									"sid": 561525028289037
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 919096920867075,
+									"parameters": {
+										"variable": "PlayerHudOn",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 176411251150184
+						}
+					],
+					"sid": 717308406203078
+				}
+			],
+			"sid": 713305963926124
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Objects",
+			"description": "things related to the state and functions of objects",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Slime Token",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "SlimeTokenObj",
+									"sid": 860948609250175,
+									"parameters": {
+										"instance-variable": "isVisible"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "SlimeTokenObj",
+									"sid": 137194697046462,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 516436184493331
+						}
+					],
+					"sid": 895310051037888
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Treasure Chest",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "TreasureChest",
+									"sid": 652157925463662,
+									"parameters": {
+										"instance-variable": "Defeated"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "TreasureChest",
+									"sid": 567475767753513,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SlimeTokenObj",
+									"sid": 330075168817010,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "SlimeTokenObj",
+									"sid": 982184618874150,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 972459703947018
+						}
+					],
+					"sid": 388264764197061
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Power Fruit",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-drop",
+									"objectClass": "Strawberry",
+									"sid": 114316877313935,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [],
+							"sid": 816700211161827,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Strawberry",
+											"sid": 202786893050819,
+											"parameters": {
+												"object": "Classes"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 571130870461359,
+											"parameters": {
+												"variable": "PlayerLevel",
+												"value": "1"
+											}
+										},
+										{
+											"type": "script",
+											"script": "LoadPlayerData(runtime)\n"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Classes",
+											"sid": 596648665875229,
+											"parameters": {
+												"object": "Ani_light",
+												"layer": "1",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Strawberry",
+											"sid": 895913276629803
+										}
+									],
+									"sid": 765721239427030
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 821574245348949,
+									"parameters": {
+										"variable": "RedBullDead"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 696218591302071,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Fort_Area3\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Strawberry",
+									"sid": 738612717466954,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BanditKing",
+									"sid": 266679259995322
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Talk",
+									"sid": 482406207124984
+								}
+							],
+							"sid": 709403522442124
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 488312977746167,
+									"parameters": {
+										"variable": "RedBullDead"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 400827850437243,
+									"parameters": {
+										"variable": "curAdvLayout",
+										"comparison": 0,
+										"value": "\"Castle_Area3\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 545222228272966
+						}
+					],
+					"sid": 196946876317753
+				}
+			],
+			"sid": 719498192753530
+		}
+	],
+	"sid": 400726385147254
+}

@@ -1,0 +1,102 @@
+{
+	"name": "TreasureChest",
+	"plugin-id": "Sprite",
+	"sid": 263042245167225,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Defeated",
+			"type": "boolean",
+			"desc": "",
+			"sid": 982759849355708
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 586793946396415
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1009708,
+						"collisionPoly": {
+							"points": [
+								0.23974172047490105,
+								0.23974172047490105,
+								0.5,
+								0.20704019995834202,
+								0.7152676525723808,
+								0.28452405748802334,
+								0.6042491147677567,
+								0.5,
+								0.7765048948135805,
+								0.7765048948135805,
+								0.5,
+								0.8169131430951885,
+								0.28931472609872944,
+								0.7104769839616747,
+								0.1401791293480525,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3258770,
+						"collisionPoly": {
+							"points": [
+								0.23974172047490105,
+								0.23974172047490105,
+								0.5,
+								0.20704019995834202,
+								0.7152676525723808,
+								0.28452405748802334,
+								0.6042491147677567,
+								0.5,
+								0.7765048948135805,
+								0.7765048948135805,
+								0.5,
+								0.8169131430951885,
+								0.28931472609872944,
+								0.7104769839616747,
+								0.1401791293480525,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 508557271416592,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

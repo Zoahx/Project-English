@@ -1,0 +1,24 @@
+{
+	"name": "Classes",
+	"plugin-id": "Sprite",
+	"sid": 696805387457780,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 973421194737919
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 258636743797601
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"SlimeRPGAttacker",
+		"SlimeRPGCaster",
+		"SlimeRPGDefender"
+	]
+}

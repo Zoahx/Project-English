@@ -1,0 +1,13 @@
+{
+	"name": "Animations",
+	"plugin-id": "Sprite",
+	"sid": 306060231869941,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"slash_0",
+		"Fire_0",
+		"hit_0"
+	]
+}

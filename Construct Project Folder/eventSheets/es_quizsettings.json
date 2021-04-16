@@ -1,0 +1,827 @@
+{
+	"name": "ES_QuizSettings",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "save",
+					"sid": 250240373892382
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "save",
+					"sid": 471291621091090
+				}
+			],
+			"sid": 301887619886725,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "questionSaveSlots",
+							"sid": 797646377924707,
+							"parameters": {
+								"comparison": 0,
+								"index": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 971900679594906,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 556027192758680,
+									"parameters": {
+										"key": "\"Q_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "alert(\"saved to question 1\")"
+								},
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 356534435352079,
+									"parameters": {
+										"key": "\"Q_ID0\"",
+										"value": "Question_inputField.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "question_inputField",
+									"sid": 534097217111506,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 468258686083378
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 524756361940562,
+									"parameters": {
+										"key": "\"A0_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 158543211978758,
+									"parameters": {
+										"key": "\"A0_ID0\"",
+										"value": "Answer1.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer1",
+									"sid": 113904746048796,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 387888461052919
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 134478431090625,
+									"parameters": {
+										"key": "\"A1_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 107825889459142,
+									"parameters": {
+										"key": "\"A1_ID0\"",
+										"value": "Answer2.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer2",
+									"sid": 331683799985367,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 388927476848498
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 596223569129800,
+									"parameters": {
+										"key": "\"A2_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 186334846034615,
+									"parameters": {
+										"key": "\"A2_ID0\"",
+										"value": "Answer3.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer3",
+									"sid": 150362216494437,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 447532532773082
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 920403474925982,
+									"parameters": {
+										"key": "\"S_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 300818570816749,
+									"parameters": {
+										"key": "\"S_ID0\"",
+										"value": "CorrectAnswer.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectAnswer",
+									"sid": 648819362280430,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 601697532753700
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 719280835920045,
+									"parameters": {
+										"key": "\"txtS_ID0\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 596606712911930,
+									"parameters": {
+										"key": "\"txtS_ID0\"",
+										"value": "CorrectMessage.text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectMessage",
+									"sid": 716761431720701,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 769388812422485
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "questionSaveSlots",
+							"sid": 533879509651405,
+							"parameters": {
+								"comparison": 0,
+								"index": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 672728158807106,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 802787265223158,
+									"parameters": {
+										"key": "\"Q_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "alert(\"saved to question 2\")"
+								},
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 490476521115080,
+									"parameters": {
+										"key": "\"Q_ID1\"",
+										"value": "Question_inputField.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "question_inputField",
+									"sid": 668387706659515,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 164579682990538
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 349151675994950,
+									"parameters": {
+										"key": "\"A0_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 630096727551482,
+									"parameters": {
+										"key": "\"A0_ID1\"",
+										"value": "Answer1.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer1",
+									"sid": 239367337676370,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 646074892223239
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 163081393112136,
+									"parameters": {
+										"key": "\"A1_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 407957180662132,
+									"parameters": {
+										"key": "\"A1_ID1\"",
+										"value": "Answer2.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer2",
+									"sid": 619609768880095,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 813306037844207
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 632769571811995,
+									"parameters": {
+										"key": "\"A2_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 404414897328404,
+									"parameters": {
+										"key": "\"A2_ID1\"",
+										"value": "Answer3.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer3",
+									"sid": 972133209510652,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 323785233262564
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 370704013227203,
+									"parameters": {
+										"key": "\"S_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 419725642304847,
+									"parameters": {
+										"key": "\"S_ID1\"",
+										"value": "CorrectAnswer.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectAnswer",
+									"sid": 275352137056216,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 814653826756429
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 409877078403866,
+									"parameters": {
+										"key": "\"txtS_ID1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 442109480908277,
+									"parameters": {
+										"key": "\"txtS_ID1\"",
+										"value": "CorrectMessage.text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectMessage",
+									"sid": 305781744204107,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 568188178559056
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-selection",
+							"objectClass": "questionSaveSlots",
+							"sid": 291175805103545,
+							"parameters": {
+								"comparison": 0,
+								"index": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 598619731706129,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 300339840177336,
+									"parameters": {
+										"key": "\"Q_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "alert(\"saved to question 3\")"
+								},
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 527200849402017,
+									"parameters": {
+										"key": "\"Q_ID2\"",
+										"value": "Question_inputField.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "question_inputField",
+									"sid": 779480557023213,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 291181122252010
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 508777971788788,
+									"parameters": {
+										"key": "\"A0_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 760112399205953,
+									"parameters": {
+										"key": "\"A0_ID2\"",
+										"value": "Answer1.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer1",
+									"sid": 761838555609465,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 613103867811917
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 769380999084484,
+									"parameters": {
+										"key": "\"A1_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 346026760293898,
+									"parameters": {
+										"key": "\"A1_ID2\"",
+										"value": "Answer2.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer2",
+									"sid": 678653904709475,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 209851622373028
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 673806757373017,
+									"parameters": {
+										"key": "\"A2_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 312653197450280,
+									"parameters": {
+										"key": "\"A2_ID2\"",
+										"value": "Answer3.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Answer3",
+									"sid": 871613355582892,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 206201286898455
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 297151635381544,
+									"parameters": {
+										"key": "\"S_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 454015144641212,
+									"parameters": {
+										"key": "\"S_ID2\"",
+										"value": "CorrectAnswer.Text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectAnswer",
+									"sid": 138359176833960,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 878635146495993
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "quizDictionary",
+									"sid": 675128180387423,
+									"parameters": {
+										"key": "\"txtS_ID2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "quizDictionary",
+									"sid": 746337545437616,
+									"parameters": {
+										"key": "\"txtS_ID2\"",
+										"value": "CorrectMessage.text"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "CorrectMessage",
+									"sid": 361863585953927,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 580762687899865
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 368313036867609
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 154031154472612,
+					"parameters": {
+						"tag": "\"CustomQuestions\"",
+						"file": "CustomQuestions.json"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 990042839327402,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "quizDictionary",
+					"sid": 319842702473600,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 675805816070863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 870525980951549
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 915977842685904,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 635002264284613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Load",
+					"sid": 239238186741332
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 187752062214745,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 904692290556625,
+					"parameters": {
+						"key": "\"CustomQuestions\""
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "quizDictionary",
+					"sid": 784025808874156,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "TextCustom",
+					"sid": 193792380846283,
+					"parameters": {
+						"text": "quizDictionary.AsJSON"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 503459680710047,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				}
+			],
+			"sid": 739599770235353
+		},
+		{
+			"functionName": "save",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 505238092735257,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 986956343679180,
+					"parameters": {
+						"key": "\"CustomQuestions\"",
+						"value": "quizDictionary.AsJSON"
+					}
+				}
+			],
+			"sid": 907528742644749
+		}
+	],
+	"sid": 192231300208592
+}

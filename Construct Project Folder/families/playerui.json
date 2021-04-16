@@ -1,0 +1,13 @@
+{
+	"name": "PlayerUI",
+	"plugin-id": "Sprite",
+	"sid": 886041514111848,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"WoodUI2",
+		"guiHeaderClass",
+		"guiHeaderLevel"
+	]
+}

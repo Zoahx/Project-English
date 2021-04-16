@@ -1,0 +1,14 @@
+{
+	"name": "Days",
+	"plugin-id": "Button",
+	"sid": 658421304079714,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Friday",
+		"Thursday"
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Snake",
+	"plugin-id": "Sprite",
+	"sid": 865601831853633,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 240824641406470
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 116,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1349746,
+						"collisionPoly": {
+							"points": [
+								0.211864406779661,
+								0.18796992481203006,
+								0.5,
+								0.23308270676691728,
+								0.5932203389830508,
+								0.3533834586466165,
+								0.8220338983050848,
+								0.5,
+								0.7288135593220338,
+								0.7593984962406015,
+								0.5,
+								0.9849624060150376,
+								0.025423728813559324,
+								0.9699248120300752,
+								0.1864406779661017,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 198093429978566,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

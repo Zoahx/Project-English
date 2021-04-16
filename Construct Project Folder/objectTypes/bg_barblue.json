@@ -1,0 +1,96 @@
+{
+	"name": "bg_barBlue",
+	"plugin-id": "Sprite",
+	"sid": 806799228037291,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "slot_ID",
+			"type": "number",
+			"desc": "",
+			"sid": 899568100030731
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1507,
+						"height": 397,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8715033,
+						"collisionPoly": {
+							"points": [
+								0.0451227604512276,
+								0,
+								0.5003317850033179,
+								0,
+								0.9548772395487723,
+								0,
+								0.9986728599867286,
+								0,
+								0.9608493696084937,
+								0.9521410579345088,
+								0.5003317850033179,
+								0.9949622166246851,
+								0.039150630391506305,
+								0.9521410579345088,
+								0.0006635700066357001,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1507,
+						"height": 402,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4068461,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.6645947049197404,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.6645947049197404,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 766691123970708,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

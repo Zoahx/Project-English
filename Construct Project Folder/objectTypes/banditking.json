@@ -1,0 +1,57 @@
+{
+	"name": "BanditKing",
+	"plugin-id": "Sprite",
+	"sid": 257130383355878,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 492,
+						"height": 431,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9273535,
+						"collisionPoly": {
+							"points": [
+								0.2703252032520325,
+								0.308584686774942,
+								0.5,
+								0.058004640371229696,
+								0.7520325203252033,
+								0.28074245939675174,
+								0.8617886178861789,
+								0.5,
+								0.9695121951219512,
+								0.9651972157772621,
+								0.5,
+								0.9976798143851509,
+								0.3516260162601626,
+								0.5962877030162413,
+								0.241869918699187,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 848206421125992,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

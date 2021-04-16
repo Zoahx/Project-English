@@ -1,0 +1,48 @@
+{
+	"name": "msgBox",
+	"plugin-id": "Sprite",
+	"sid": 149603865707857,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 149161821186656
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 295856538144042
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 125,
+						"originX": 0.9220379146919432,
+						"originY": 2.131818181818182,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 350441,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 275307108759926,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

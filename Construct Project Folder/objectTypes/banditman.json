@@ -1,0 +1,57 @@
+{
+	"name": "BanditMan",
+	"plugin-id": "Sprite",
+	"sid": 511519248202022,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 237,
+						"height": 220,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4334826,
+						"collisionPoly": {
+							"points": [
+								0.350210970464135,
+								0.37727272727272726,
+								0.5,
+								0.01818181818181818,
+								0.8396624472573839,
+								0.16818181818181818,
+								0.8860759493670886,
+								0.5,
+								0.9831223628691983,
+								0.9818181818181818,
+								0.5,
+								0.990909090909091,
+								0.31223628691983124,
+								0.6590909090909091,
+								0.16877637130801687,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 514638562917935,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

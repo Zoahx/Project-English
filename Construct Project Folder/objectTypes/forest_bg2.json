@@ -1,0 +1,53 @@
+{
+	"name": "forest_bg2",
+	"plugin-id": "Sprite",
+	"sid": 460629146528508,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 355,
+						"originX": 0.5,
+						"originY": 1.0450704225352112,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6192440,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0.0028169014084507044,
+								0.5,
+								0.0028169014084507044,
+								0.998003992015968,
+								0.0028169014084507044,
+								0.5708582834331337,
+								0.8788732394366198,
+								0.5,
+								0.8788732394366198,
+								0.4281437125748503,
+								0.8788732394366198
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 266752965470879,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "Weather",
+	"plugin-id": "Button",
+	"sid": 291611531149124,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"Cloudy",
+		"Cold",
+		"Hot",
+		"Sunny",
+		"Snowing",
+		"Rainy"
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"name": "misc",
+	"plugin-id": "Sprite",
+	"sid": 579283557161913,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 894229451297881
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1224,
+						"height": 1395,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7517936,
+						"collisionPoly": {
+							"points": [
+								0.26715686274509803,
+								0.23440860215053763,
+								0.5,
+								0.0014336917562724014,
+								0.7328431372549019,
+								0.23369175627240144,
+								0.9983660130718954,
+								0.5,
+								0.7328431372549019,
+								0.7655913978494624,
+								0.5,
+								0.9985663082437276,
+								0.26633986928104575,
+								0.7655913978494624,
+								0.0008169934640522876,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1224,
+						"height": 1395,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2045061,
+						"collisionPoly": {
+							"points": [
+								0.26715686274509803,
+								0.23440860215053763,
+								0.5,
+								0.0014336917562724014,
+								0.7328431372549019,
+								0.23369175627240144,
+								0.9983660130718954,
+								0.5,
+								0.7328431372549019,
+								0.7655913978494624,
+								0.5,
+								0.9985663082437276,
+								0.26633986928104575,
+								0.7655913978494624,
+								0.0008169934640522876,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 295360657606021,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
